@@ -3,18 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62B971425479FD273115DE9A /* Pods_ElClima_ElClimaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D04DBF419B6E169CA4EC987 /* Pods_ElClima_ElClimaUITests.framework */; };
+		8D27ACDFAA4377BEEDA61CCF /* Pods_ElClima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412C4F17A4F2F7EB3ED513B /* Pods_ElClima.framework */; };
 		DB68897F25895250009D4154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68897E25895250009D4154 /* AppDelegate.swift */; };
-		DB68898125895250009D4154 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68898025895250009D4154 /* SceneDelegate.swift */; };
-		DB68898325895250009D4154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68898225895250009D4154 /* ViewController.swift */; };
-		DB68898625895250009D4154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68898425895250009D4154 /* Main.storyboard */; };
 		DB68898825895251009D4154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB68898725895251009D4154 /* Assets.xcassets */; };
 		DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68898925895251009D4154 /* LaunchScreen.storyboard */; };
 		DB68899625895251009D4154 /* ElClimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68899525895251009D4154 /* ElClimaTests.swift */; };
 		DB6889A125895252009D4154 /* ElClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889A025895252009D4154 /* ElClimaUITests.swift */; };
+		DB6889C2258953DC009D4154 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889C1258953DC009D4154 /* ViewControllerAssembly.swift */; };
+		DB6889CB2589540D009D4154 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */; };
+		DB6889D325895438009D4154 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889D225895438009D4154 /* HomeAssembly.swift */; };
+		DB6889E02589544C009D4154 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889D92589544C009D4154 /* HomePresenter.swift */; };
+		DB6889E12589544C009D4154 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DA2589544C009D4154 /* HomeRouter.swift */; };
+		DB6889E22589544C009D4154 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DB2589544C009D4154 /* HomeViewController.swift */; };
+		DB6889E32589544C009D4154 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DC2589544C009D4154 /* HomeInteractor.swift */; };
+		DB6889E42589544C009D4154 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DD2589544C009D4154 /* HomeEntity.swift */; };
+		DB6889E52589544C009D4154 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6889DE2589544C009D4154 /* HomeViewController.xib */; };
+		DB6889E62589544C009D4154 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DF2589544C009D4154 /* HomeService.swift */; };
+		DF1D1E3F56338C32C41D9F47 /* Pods_ElClimaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D04DBF419B6E169CA4EC987 /* Pods_ElClima_ElClimaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElClima_ElClimaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElClimaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		303267F0C47947973DB4A1CE /* Pods-ElClimaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClimaTests.debug.xcconfig"; path = "Target Support Files/Pods-ElClimaTests/Pods-ElClimaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		575598F44E097D7717C0DADC /* Pods-ElClima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClima.debug.xcconfig"; path = "Target Support Files/Pods-ElClima/Pods-ElClima.debug.xcconfig"; sourceTree = "<group>"; };
+		638EC6A4CCDC458B1CFEFF61 /* Pods-ElClima-ElClimaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClima-ElClimaUITests.debug.xcconfig"; path = "Target Support Files/Pods-ElClima-ElClimaUITests/Pods-ElClima-ElClimaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6412C4F17A4F2F7EB3ED513B /* Pods_ElClima.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElClima.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F9F3E65C12849C5A76D421 /* Pods-ElClima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClima.release.xcconfig"; path = "Target Support Files/Pods-ElClima/Pods-ElClima.release.xcconfig"; sourceTree = "<group>"; };
+		BA345258A5738AB42ADD4C55 /* Pods-ElClima-ElClimaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClima-ElClimaUITests.release.xcconfig"; path = "Target Support Files/Pods-ElClima-ElClimaUITests/Pods-ElClima-ElClimaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D9A5778CAC169A99B97F9DEE /* Pods-ElClimaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClimaTests.release.xcconfig"; path = "Target Support Files/Pods-ElClimaTests/Pods-ElClimaTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB68897B25895250009D4154 /* ElClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB68897E25895250009D4154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB68898025895250009D4154 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB68898225895250009D4154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB68898525895250009D4154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB68898725895251009D4154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB68898A25895251009D4154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB68898C25895251009D4154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +65,16 @@
 		DB68899C25895252009D4154 /* ElClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6889A025895252009D4154 /* ElClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElClimaUITests.swift; sourceTree = "<group>"; };
 		DB6889A225895252009D4154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6889C1258953DC009D4154 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		DB6889D225895438009D4154 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		DB6889D92589544C009D4154 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		DB6889DA2589544C009D4154 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		DB6889DB2589544C009D4154 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB6889DC2589544C009D4154 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		DB6889DD2589544C009D4154 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		DB6889DE2589544C009D4154 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		DB6889DF2589544C009D4154 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D27ACDFAA4377BEEDA61CCF /* Pods_ElClima.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1D1E3F56338C32C41D9F47 /* Pods_ElClimaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62B971425479FD273115DE9A /* Pods_ElClima_ElClimaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222C1097CEC1AE4A9E951CD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6412C4F17A4F2F7EB3ED513B /* Pods_ElClima.framework */,
+				0D04DBF419B6E169CA4EC987 /* Pods_ElClima_ElClimaUITests.framework */,
+				21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB68897225895250009D4154 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				DB68899425895251009D4154 /* ElClimaTests */,
 				DB68899F25895252009D4154 /* ElClimaUITests */,
 				DB68897C25895250009D4154 /* Products */,
+				DBF766706BB396308DF0D511 /* Pods */,
+				222C1097CEC1AE4A9E951CD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +140,10 @@
 		DB68897D25895250009D4154 /* ElClima */ = {
 			isa = PBXGroup;
 			children = (
+				DB6889D72589543E009D4154 /* Scenes */,
+				DB6889C925895405009D4154 /* Common */,
+				DB6889BE258953C3009D4154 /* DI */,
 				DB68897E25895250009D4154 /* AppDelegate.swift */,
-				DB68898025895250009D4154 /* SceneDelegate.swift */,
-				DB68898225895250009D4154 /* ViewController.swift */,
-				DB68898425895250009D4154 /* Main.storyboard */,
 				DB68898725895251009D4154 /* Assets.xcassets */,
 				DB68898925895251009D4154 /* LaunchScreen.storyboard */,
 				DB68898C25895251009D4154 /* Info.plist */,
@@ -128,6 +169,74 @@
 			path = ElClimaUITests;
 			sourceTree = "<group>";
 		};
+		DB6889BE258953C3009D4154 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DB6889C0258953CD009D4154 /* Common */,
+				DB6889BF258953C8009D4154 /* Scenes */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		DB6889BF258953C8009D4154 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DB6889D225895438009D4154 /* HomeAssembly.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DB6889C0258953CD009D4154 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB6889C1258953DC009D4154 /* ViewControllerAssembly.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB6889C925895405009D4154 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB6889D72589543E009D4154 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DB6889D825895442009D4154 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DB6889D825895442009D4154 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DB6889DD2589544C009D4154 /* HomeEntity.swift */,
+				DB6889DC2589544C009D4154 /* HomeInteractor.swift */,
+				DB6889D92589544C009D4154 /* HomePresenter.swift */,
+				DB6889DA2589544C009D4154 /* HomeRouter.swift */,
+				DB6889DF2589544C009D4154 /* HomeService.swift */,
+				DB6889DB2589544C009D4154 /* HomeViewController.swift */,
+				DB6889DE2589544C009D4154 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DBF766706BB396308DF0D511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				575598F44E097D7717C0DADC /* Pods-ElClima.debug.xcconfig */,
+				93F9F3E65C12849C5A76D421 /* Pods-ElClima.release.xcconfig */,
+				638EC6A4CCDC458B1CFEFF61 /* Pods-ElClima-ElClimaUITests.debug.xcconfig */,
+				BA345258A5738AB42ADD4C55 /* Pods-ElClima-ElClimaUITests.release.xcconfig */,
+				303267F0C47947973DB4A1CE /* Pods-ElClimaTests.debug.xcconfig */,
+				D9A5778CAC169A99B97F9DEE /* Pods-ElClimaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB6889A525895252009D4154 /* Build configuration list for PBXNativeTarget "ElClima" */;
 			buildPhases = (
+				F1A50372709C57A1FC15EC65 /* [CP] Check Pods Manifest.lock */,
 				DB68897725895250009D4154 /* Sources */,
 				DB68897825895250009D4154 /* Frameworks */,
 				DB68897925895250009D4154 /* Resources */,
+				6339412DD9B798BB92EB2B4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB6889A825895252009D4154 /* Build configuration list for PBXNativeTarget "ElClimaTests" */;
 			buildPhases = (
+				4126B1A103E9DC864CC92964 /* [CP] Check Pods Manifest.lock */,
 				DB68898D25895251009D4154 /* Sources */,
 				DB68898E25895251009D4154 /* Frameworks */,
 				DB68898F25895251009D4154 /* Resources */,
@@ -170,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB6889AB25895252009D4154 /* Build configuration list for PBXNativeTarget "ElClimaUITests" */;
 			buildPhases = (
+				1E6C23CE14E62513842E1B71 /* [CP] Check Pods Manifest.lock */,
 				DB68899825895252009D4154 /* Sources */,
 				DB68899925895252009D4154 /* Frameworks */,
 				DB68899A25895252009D4154 /* Resources */,
+				00EC6876EEE48512C0F53B63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +306,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = memtarhan;
 				TargetAttributes = {
 					DB68897A25895250009D4154 = {
 						CreatedOnToolsVersion = 12.2;
@@ -233,7 +348,7 @@
 			files = (
 				DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */,
 				DB68898825895251009D4154 /* Assets.xcassets in Resources */,
-				DB68898625895250009D4154 /* Main.storyboard in Resources */,
+				DB6889E52589544C009D4154 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +368,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00EC6876EEE48512C0F53B63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElClima-ElClimaUITests/Pods-ElClima-ElClimaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElClima-ElClimaUITests/Pods-ElClima-ElClimaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElClima-ElClimaUITests/Pods-ElClima-ElClimaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E6C23CE14E62513842E1B71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElClima-ElClimaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4126B1A103E9DC864CC92964 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElClimaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6339412DD9B798BB92EB2B4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElClima/Pods-ElClima-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElClima/Pods-ElClima-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElClima/Pods-ElClima-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A50372709C57A1FC15EC65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElClima-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB68897725895250009D4154 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB68898325895250009D4154 /* ViewController.swift in Sources */,
+				DB6889CB2589540D009D4154 /* ViewControllerFactory.swift in Sources */,
+				DB6889E12589544C009D4154 /* HomeRouter.swift in Sources */,
+				DB6889C2258953DC009D4154 /* ViewControllerAssembly.swift in Sources */,
+				DB6889E32589544C009D4154 /* HomeInteractor.swift in Sources */,
+				DB6889E62589544C009D4154 /* HomeService.swift in Sources */,
+				DB6889D325895438009D4154 /* HomeAssembly.swift in Sources */,
+				DB6889E02589544C009D4154 /* HomePresenter.swift in Sources */,
+				DB6889E22589544C009D4154 /* HomeViewController.swift in Sources */,
+				DB6889E42589544C009D4154 /* HomeEntity.swift in Sources */,
 				DB68897F25895250009D4154 /* AppDelegate.swift in Sources */,
-				DB68898125895250009D4154 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +521,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB68898425895250009D4154 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB68898525895250009D4154 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB68898925895251009D4154 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +650,7 @@
 		};
 		DB6889A625895252009D4154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575598F44E097D7717C0DADC /* Pods-ElClima.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +671,7 @@
 		};
 		DB6889A725895252009D4154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F9F3E65C12849C5A76D421 /* Pods-ElClima.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +692,7 @@
 		};
 		DB6889A925895252009D4154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 303267F0C47947973DB4A1CE /* Pods-ElClimaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +715,7 @@
 		};
 		DB6889AA25895252009D4154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9A5778CAC169A99B97F9DEE /* Pods-ElClimaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +738,7 @@
 		};
 		DB6889AC25895252009D4154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 638EC6A4CCDC458B1CFEFF61 /* Pods-ElClima-ElClimaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +759,7 @@
 		};
 		DB6889AD25895252009D4154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA345258A5738AB42ADD4C55 /* Pods-ElClima-ElClimaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
