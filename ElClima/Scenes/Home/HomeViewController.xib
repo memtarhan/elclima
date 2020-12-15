@@ -14,12 +14,62 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientBackgroundView" customModule="ElClima" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Istanbul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5y-49-7nn">
+                    <rect key="frame" x="118.5" y="76" width="177" height="54"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="006-blizzard" translatesAutoresizingMaskIntoConstraints="NO" id="W2a-Q8-QPv">
+                    <rect key="frame" x="64" y="162" width="286" height="286"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="W2a-Q8-QPv" secondAttribute="height" multiplier="1:1" id="1Wu-Y1-XrF"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBH-Uo-RgI">
+                    <rect key="frame" x="153" y="493.5" width="108" height="115"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="96"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-LW-o9X" customClass="TabBarView" customModule="ElClima" customModuleProvider="target">
+                    <rect key="frame" x="32" y="774" width="350" height="96"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="Uct-xa-pu9"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rainy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFp-lU-bAo">
+                    <rect key="frame" x="182.5" y="468" width="49" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HBH-Uo-RgI" firstAttribute="top" secondItem="PFp-lU-bAo" secondAttribute="bottom" id="1iw-IG-dzN"/>
+                <constraint firstItem="HBH-Uo-RgI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7NV-nH-AgP"/>
+                <constraint firstItem="pVp-LW-o9X" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="8" id="86y-gk-GHq"/>
+                <constraint firstItem="PFp-lU-bAo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9jD-xh-9sp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pVp-LW-o9X" secondAttribute="trailing" constant="32" id="BZz-DS-vSN"/>
+                <constraint firstItem="W2a-Q8-QPv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="FN9-Tw-l3b"/>
+                <constraint firstItem="pVp-LW-o9X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Rwu-6L-Tfx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W2a-Q8-QPv" secondAttribute="trailing" constant="64" id="XL2-sE-KJX"/>
+                <constraint firstItem="b5y-49-7nn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fEW-jd-zjS"/>
+                <constraint firstItem="b5y-49-7nn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="rr2-sY-94l"/>
+                <constraint firstItem="PFp-lU-bAo" firstAttribute="top" secondItem="W2a-Q8-QPv" secondAttribute="bottom" constant="20" id="urd-SL-k0N"/>
+                <constraint firstItem="W2a-Q8-QPv" firstAttribute="top" secondItem="b5y-49-7nn" secondAttribute="bottom" constant="32" id="yRE-x4-hYc"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="152"/>
         </view>
     </objects>
+    <resources>
+        <image name="006-blizzard" width="512" height="512"/>
+    </resources>
 </document>

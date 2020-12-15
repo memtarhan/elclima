@@ -26,6 +26,7 @@
 		DB6889E62589544C009D4154 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DF2589544C009D4154 /* HomeService.swift */; };
 		DB6889EE258956AE009D4154 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889ED258956AE009D4154 /* UIView+Gradient.swift */; };
 		DB6889F3258956CB009D4154 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889F2258956CB009D4154 /* Colors.swift */; };
+		DBF1B49B25895DD500970062 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF1B49A25895DD500970062 /* CustomViews.swift */; };
 		DF1D1E3F56338C32C41D9F47 /* Pods_ElClimaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		DB6889DF2589544C009D4154 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		DB6889ED258956AE009D4154 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		DB6889F2258956CB009D4154 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DBF1B49A25895DD500970062 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */,
 				DB6889ED258956AE009D4154 /* UIView+Gradient.swift */,
 				DB6889F2258956CB009D4154 /* Colors.swift */,
+				DBF1B49A25895DD500970062 /* CustomViews.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				DB6889E22589544C009D4154 /* HomeViewController.swift in Sources */,
 				DB6889E42589544C009D4154 /* HomeEntity.swift in Sources */,
 				DB68897F25895250009D4154 /* AppDelegate.swift in Sources */,
+				DBF1B49B25895DD500970062 /* CustomViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

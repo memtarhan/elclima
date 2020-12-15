@@ -21,3 +21,11 @@ extension UIView {
         layer.insertSublayer(gradientLayer, at: 0)
     }
 }
+
+@IBDesignable
+class GradientBackgroundView: UIView {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        applyGradientBackground()
+    }
+}
