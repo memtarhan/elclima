@@ -24,6 +24,8 @@
 		DB6889E42589544C009D4154 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DD2589544C009D4154 /* HomeEntity.swift */; };
 		DB6889E52589544C009D4154 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6889DE2589544C009D4154 /* HomeViewController.xib */; };
 		DB6889E62589544C009D4154 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889DF2589544C009D4154 /* HomeService.swift */; };
+		DB6889EE258956AE009D4154 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889ED258956AE009D4154 /* UIView+Gradient.swift */; };
+		DB6889F3258956CB009D4154 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889F2258956CB009D4154 /* Colors.swift */; };
 		DF1D1E3F56338C32C41D9F47 /* Pods_ElClimaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		DB6889DD2589544C009D4154 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		DB6889DE2589544C009D4154 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		DB6889DF2589544C009D4154 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		DB6889ED258956AE009D4154 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
+		DB6889F2258956CB009D4154 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */,
+				DB6889ED258956AE009D4154 /* UIView+Gradient.swift */,
+				DB6889F2258956CB009D4154 /* Colors.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -476,6 +482,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6889EE258956AE009D4154 /* UIView+Gradient.swift in Sources */,
+				DB6889F3258956CB009D4154 /* Colors.swift in Sources */,
 				DB6889CB2589540D009D4154 /* ViewControllerFactory.swift in Sources */,
 				DB6889E12589544C009D4154 /* HomeRouter.swift in Sources */,
 				DB6889C2258953DC009D4154 /* ViewControllerAssembly.swift in Sources */,
