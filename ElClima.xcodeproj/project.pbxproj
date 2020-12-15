@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB68897F25895250009D4154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68897E25895250009D4154 /* AppDelegate.swift */; };
+		DB68898125895250009D4154 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68898025895250009D4154 /* SceneDelegate.swift */; };
+		DB68898325895250009D4154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68898225895250009D4154 /* ViewController.swift */; };
+		DB68898625895250009D4154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68898425895250009D4154 /* Main.storyboard */; };
+		DB68898825895251009D4154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB68898725895251009D4154 /* Assets.xcassets */; };
+		DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68898925895251009D4154 /* LaunchScreen.storyboard */; };
+		DB68899625895251009D4154 /* ElClimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68899525895251009D4154 /* ElClimaTests.swift */; };
+		DB6889A125895252009D4154 /* ElClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6889A025895252009D4154 /* ElClimaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB68899225895251009D4154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB68897325895250009D4154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB68897A25895250009D4154;
+			remoteInfo = ElClima;
+		};
+		DB68899D25895252009D4154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB68897325895250009D4154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB68897A25895250009D4154;
+			remoteInfo = ElClima;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB68897B25895250009D4154 /* ElClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB68897E25895250009D4154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB68898025895250009D4154 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB68898225895250009D4154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB68898525895250009D4154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB68898725895251009D4154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB68898A25895251009D4154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB68898C25895251009D4154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB68899125895251009D4154 /* ElClimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElClimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB68899525895251009D4154 /* ElClimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElClimaTests.swift; sourceTree = "<group>"; };
+		DB68899725895251009D4154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB68899C25895252009D4154 /* ElClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6889A025895252009D4154 /* ElClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElClimaUITests.swift; sourceTree = "<group>"; };
+		DB6889A225895252009D4154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB68897825895250009D4154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB68898E25895251009D4154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB68899925895252009D4154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB68897225895250009D4154 = {
+			isa = PBXGroup;
+			children = (
+				DB68897D25895250009D4154 /* ElClima */,
+				DB68899425895251009D4154 /* ElClimaTests */,
+				DB68899F25895252009D4154 /* ElClimaUITests */,
+				DB68897C25895250009D4154 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB68897C25895250009D4154 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB68897B25895250009D4154 /* ElClima.app */,
+				DB68899125895251009D4154 /* ElClimaTests.xctest */,
+				DB68899C25895252009D4154 /* ElClimaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB68897D25895250009D4154 /* ElClima */ = {
+			isa = PBXGroup;
+			children = (
+				DB68897E25895250009D4154 /* AppDelegate.swift */,
+				DB68898025895250009D4154 /* SceneDelegate.swift */,
+				DB68898225895250009D4154 /* ViewController.swift */,
+				DB68898425895250009D4154 /* Main.storyboard */,
+				DB68898725895251009D4154 /* Assets.xcassets */,
+				DB68898925895251009D4154 /* LaunchScreen.storyboard */,
+				DB68898C25895251009D4154 /* Info.plist */,
+			);
+			path = ElClima;
+			sourceTree = "<group>";
+		};
+		DB68899425895251009D4154 /* ElClimaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB68899525895251009D4154 /* ElClimaTests.swift */,
+				DB68899725895251009D4154 /* Info.plist */,
+			);
+			path = ElClimaTests;
+			sourceTree = "<group>";
+		};
+		DB68899F25895252009D4154 /* ElClimaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6889A025895252009D4154 /* ElClimaUITests.swift */,
+				DB6889A225895252009D4154 /* Info.plist */,
+			);
+			path = ElClimaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB68897A25895250009D4154 /* ElClima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6889A525895252009D4154 /* Build configuration list for PBXNativeTarget "ElClima" */;
+			buildPhases = (
+				DB68897725895250009D4154 /* Sources */,
+				DB68897825895250009D4154 /* Frameworks */,
+				DB68897925895250009D4154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElClima;
+			productName = ElClima;
+			productReference = DB68897B25895250009D4154 /* ElClima.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB68899025895251009D4154 /* ElClimaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6889A825895252009D4154 /* Build configuration list for PBXNativeTarget "ElClimaTests" */;
+			buildPhases = (
+				DB68898D25895251009D4154 /* Sources */,
+				DB68898E25895251009D4154 /* Frameworks */,
+				DB68898F25895251009D4154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB68899325895251009D4154 /* PBXTargetDependency */,
+			);
+			name = ElClimaTests;
+			productName = ElClimaTests;
+			productReference = DB68899125895251009D4154 /* ElClimaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB68899B25895252009D4154 /* ElClimaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6889AB25895252009D4154 /* Build configuration list for PBXNativeTarget "ElClimaUITests" */;
+			buildPhases = (
+				DB68899825895252009D4154 /* Sources */,
+				DB68899925895252009D4154 /* Frameworks */,
+				DB68899A25895252009D4154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB68899E25895252009D4154 /* PBXTargetDependency */,
+			);
+			name = ElClimaUITests;
+			productName = ElClimaUITests;
+			productReference = DB68899C25895252009D4154 /* ElClimaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB68897325895250009D4154 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					DB68897A25895250009D4154 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					DB68899025895251009D4154 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = DB68897A25895250009D4154;
+					};
+					DB68899B25895252009D4154 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = DB68897A25895250009D4154;
+					};
+				};
+			};
+			buildConfigurationList = DB68897625895250009D4154 /* Build configuration list for PBXProject "ElClima" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB68897225895250009D4154;
+			productRefGroup = DB68897C25895250009D4154 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB68897A25895250009D4154 /* ElClima */,
+				DB68899025895251009D4154 /* ElClimaTests */,
+				DB68899B25895252009D4154 /* ElClimaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB68897925895250009D4154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */,
+				DB68898825895251009D4154 /* Assets.xcassets in Resources */,
+				DB68898625895250009D4154 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB68898F25895251009D4154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB68899A25895252009D4154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB68897725895250009D4154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB68898325895250009D4154 /* ViewController.swift in Sources */,
+				DB68897F25895250009D4154 /* AppDelegate.swift in Sources */,
+				DB68898125895250009D4154 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB68898D25895251009D4154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB68899625895251009D4154 /* ElClimaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB68899825895252009D4154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6889A125895252009D4154 /* ElClimaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB68899325895251009D4154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB68897A25895250009D4154 /* ElClima */;
+			targetProxy = DB68899225895251009D4154 /* PBXContainerItemProxy */;
+		};
+		DB68899E25895252009D4154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB68897A25895250009D4154 /* ElClima */;
+			targetProxy = DB68899D25895252009D4154 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB68898425895250009D4154 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB68898525895250009D4154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB68898925895251009D4154 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB68898A25895251009D4154 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6889A325895252009D4154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB6889A425895252009D4154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6889A625895252009D4154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9L899V66;
+				INFOPLIST_FILE = ElClima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memtarhan.ElClima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6889A725895252009D4154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9L899V66;
+				INFOPLIST_FILE = ElClima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memtarhan.ElClima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB6889A925895252009D4154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9L899V66;
+				INFOPLIST_FILE = ElClimaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memtarhan.ElClimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElClima.app/ElClima";
+			};
+			name = Debug;
+		};
+		DB6889AA25895252009D4154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9L899V66;
+				INFOPLIST_FILE = ElClimaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memtarhan.ElClimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElClima.app/ElClima";
+			};
+			name = Release;
+		};
+		DB6889AC25895252009D4154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9L899V66;
+				INFOPLIST_FILE = ElClimaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memtarhan.ElClimaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElClima;
+			};
+			name = Debug;
+		};
+		DB6889AD25895252009D4154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L9L899V66;
+				INFOPLIST_FILE = ElClimaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memtarhan.ElClimaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElClima;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB68897625895250009D4154 /* Build configuration list for PBXProject "ElClima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6889A325895252009D4154 /* Debug */,
+				DB6889A425895252009D4154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6889A525895252009D4154 /* Build configuration list for PBXNativeTarget "ElClima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6889A625895252009D4154 /* Debug */,
+				DB6889A725895252009D4154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6889A825895252009D4154 /* Build configuration list for PBXNativeTarget "ElClimaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6889A925895252009D4154 /* Debug */,
+				DB6889AA25895252009D4154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6889AB25895252009D4154 /* Build configuration list for PBXNativeTarget "ElClimaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6889AC25895252009D4154 /* Debug */,
+				DB6889AD25895252009D4154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB68897325895250009D4154 /* Project object */;
+}
