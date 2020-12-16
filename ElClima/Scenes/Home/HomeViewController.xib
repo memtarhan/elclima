@@ -46,6 +46,9 @@
                                 <constraint firstAttribute="height" constant="45" id="hQd-5O-HBc"/>
                             </constraints>
                             <state key="normal" image="nearby"/>
+                            <connections>
+                                <action selector="didTapNearby:" destination="-1" eventType="touchUpInside" id="dLi-2Y-Is5"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El clima" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6O-k9-0a1">
                             <rect key="frame" x="32" y="21" width="209" height="70"/>

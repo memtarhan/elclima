@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initWindow()
         initDI()
         initUI()
+        initNavigationBar()
 
         return true
     }
@@ -39,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func initDI() {
         assembler = Assembler([
             HomeAssembly(),
+            NearbyAssembly(),
         ])
         assembler?.apply(assembly: ViewControllerAssembly(assembler: assembler!))
     }
@@ -46,5 +48,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// - Initializing UI w/ initial view controller
     func initUI() {
         rootViewController = assembler?.resolver.resolve(HomeViewController.self)! as? UIViewController
+    }
+    
+    /// - Initializing UINavigationBar
+    private func initNavigationBar() {
+        let appearance = UINavigationBar.appearance()
+        appearance.shadowImage = UIImage()
+        appearance.setBackgroundImage(UIImage(), for: .default)
+        appearance.barTintColor = .clear
+        appearance.prefersLargeTitles = true
+
+        /// - Back indicator
+        appearance.backIndicatorImage = UIImage()
+        appearance.backIndicatorTransitionMaskImage = UIImage()
+        var backButtonImage = UIImage(named: "back-button-indicator")
+        backButtonImage = backButtonImage?.stretchableImage(withLeftCapWidth: 20, topCapHeight: 30)
+        UIBarButtonItem.appearance().setBackButtonBackgroundImage(backButtonImage, for: .normal, barMetrics: .default)
     }
 }

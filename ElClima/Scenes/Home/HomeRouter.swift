@@ -10,6 +10,8 @@ import UIKit
 
 protocol HomeRouter: class {
     var view: HomeViewController? { get set }
+    
+    func navigateToNearby()
 }
 
 class HomeRouterImpl: HomeRouter {
@@ -19,5 +21,9 @@ class HomeRouterImpl: HomeRouter {
 
     init(factory: ViewControllerFactory) {
         self.factory = factory
+    }
+    
+    func navigateToNearby() {
+        presentNavigationController(with: factory.nearby, on: view)
     }
 }

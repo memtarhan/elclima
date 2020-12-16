@@ -11,6 +11,7 @@ import Swinject
 
 protocol ViewControllerFactory {
     var home: HomeViewController { get }
+    var nearby: NearbyViewController { get }
 }
 
 class ViewControllerFactoryImpl: ViewControllerFactory {
@@ -21,4 +22,6 @@ class ViewControllerFactoryImpl: ViewControllerFactory {
     }
 
     var home: HomeViewController { assembler.resolver.resolve(HomeViewController.self)! }
+
+    var nearby: NearbyViewController { assembler.resolver.resolve(NearbyViewController.self)! }
 }

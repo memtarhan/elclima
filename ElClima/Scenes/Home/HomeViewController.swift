@@ -24,10 +24,14 @@ class HomeViewControllerImpl: UIViewController {
         super.viewWillAppear(animated)
         localize()
     }
-    
+
+    @IBAction func didTapNearby(_ sender: Any) {
+        presenter?.presentNearby()
+    }
+
     private func setup() {
     }
-    
+
     private func localize() {
     }
 }
@@ -36,4 +40,3 @@ class HomeViewControllerImpl: UIViewController {
 
 extension HomeViewControllerImpl: HomeViewController {
 }
-
