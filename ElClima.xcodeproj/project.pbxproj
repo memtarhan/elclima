@@ -37,6 +37,14 @@
 		DBBEBBC7258A7A6F00BDA0B4 /* Router+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBC6258A7A6F00BDA0B4 /* Router+.swift */; };
 		DBBEBBD1258A7CED00BDA0B4 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBCF258A7CED00BDA0B4 /* CityTableViewCell.swift */; };
 		DBBEBBD2258A7CED00BDA0B4 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBBEBBD0258A7CED00BDA0B4 /* CityTableViewCell.xib */; };
+		DBBEBBDE258A80EE00BDA0B4 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBD7258A80EE00BDA0B4 /* DetailsPresenter.swift */; };
+		DBBEBBDF258A80EE00BDA0B4 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBD8258A80EE00BDA0B4 /* DetailsRouter.swift */; };
+		DBBEBBE0258A80EE00BDA0B4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBD9258A80EE00BDA0B4 /* DetailsViewController.swift */; };
+		DBBEBBE1258A80EE00BDA0B4 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBDA258A80EE00BDA0B4 /* DetailsInteractor.swift */; };
+		DBBEBBE2258A80EE00BDA0B4 /* DetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBDB258A80EE00BDA0B4 /* DetailsEntity.swift */; };
+		DBBEBBE3258A80EE00BDA0B4 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBBEBBDC258A80EE00BDA0B4 /* DetailsViewController.xib */; };
+		DBBEBBE4258A80EE00BDA0B4 /* DetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBDD258A80EE00BDA0B4 /* DetailsService.swift */; };
+		DBBEBBF5258A827A00BDA0B4 /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBF4258A827A00BDA0B4 /* DetailsAssembly.swift */; };
 		DBF1B49B25895DD500970062 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF1B49A25895DD500970062 /* CustomViews.swift */; };
 		DF1D1E3F56338C32C41D9F47 /* Pods_ElClimaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */; };
 /* End PBXBuildFile section */
@@ -102,6 +110,14 @@
 		DBBEBBC6258A7A6F00BDA0B4 /* Router+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+.swift"; sourceTree = "<group>"; };
 		DBBEBBCF258A7CED00BDA0B4 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		DBBEBBD0258A7CED00BDA0B4 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		DBBEBBD7258A80EE00BDA0B4 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		DBBEBBD8258A80EE00BDA0B4 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		DBBEBBD9258A80EE00BDA0B4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DBBEBBDA258A80EE00BDA0B4 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		DBBEBBDB258A80EE00BDA0B4 /* DetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEntity.swift; sourceTree = "<group>"; };
+		DBBEBBDC258A80EE00BDA0B4 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		DBBEBBDD258A80EE00BDA0B4 /* DetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsService.swift; sourceTree = "<group>"; };
+		DBBEBBF4258A827A00BDA0B4 /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
 		DBF1B49A25895DD500970062 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +225,7 @@
 		DB6889BF258953C8009D4154 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DBBEBBF4258A827A00BDA0B4 /* DetailsAssembly.swift */,
 				DB6889D225895438009D4154 /* HomeAssembly.swift */,
 				DBBEBBBA258A79EA00BDA0B4 /* NearbyAssembly.swift */,
 			);
@@ -226,11 +243,11 @@
 		DB6889C925895405009D4154 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */,
-				DB6889ED258956AE009D4154 /* UIView+Gradient.swift */,
 				DB6889F2258956CB009D4154 /* Colors.swift */,
 				DBF1B49A25895DD500970062 /* CustomViews.swift */,
 				DBBEBBC6258A7A6F00BDA0B4 /* Router+.swift */,
+				DB6889ED258956AE009D4154 /* UIView+Gradient.swift */,
+				DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -238,6 +255,7 @@
 		DB6889D72589543E009D4154 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DBBEBBD6258A80E200BDA0B4 /* Details */,
 				DB6889D825895442009D4154 /* Home */,
 				DBBEBBA5258A79C400BDA0B4 /* Nearby */,
 			);
@@ -280,6 +298,20 @@
 				DBBEBBD0258A7CED00BDA0B4 /* CityTableViewCell.xib */,
 			);
 			path = City;
+			sourceTree = "<group>";
+		};
+		DBBEBBD6258A80E200BDA0B4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DBBEBBDB258A80EE00BDA0B4 /* DetailsEntity.swift */,
+				DBBEBBDA258A80EE00BDA0B4 /* DetailsInteractor.swift */,
+				DBBEBBD7258A80EE00BDA0B4 /* DetailsPresenter.swift */,
+				DBBEBBD8258A80EE00BDA0B4 /* DetailsRouter.swift */,
+				DBBEBBDD258A80EE00BDA0B4 /* DetailsService.swift */,
+				DBBEBBD9258A80EE00BDA0B4 /* DetailsViewController.swift */,
+				DBBEBBDC258A80EE00BDA0B4 /* DetailsViewController.xib */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		DBF766706BB396308DF0D511 /* Pods */ = {
@@ -409,6 +441,7 @@
 				DBBEBBB2258A79D400BDA0B4 /* NearbyViewController.xib in Resources */,
 				DB68898825895251009D4154 /* Assets.xcassets in Resources */,
 				DB6889E52589544C009D4154 /* HomeViewController.xib in Resources */,
+				DBBEBBE3258A80EE00BDA0B4 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +571,8 @@
 			files = (
 				DBBEBBBB258A79EA00BDA0B4 /* NearbyAssembly.swift in Sources */,
 				DBBEBBC7258A7A6F00BDA0B4 /* Router+.swift in Sources */,
+				DBBEBBE4258A80EE00BDA0B4 /* DetailsService.swift in Sources */,
+				DBBEBBDE258A80EE00BDA0B4 /* DetailsPresenter.swift in Sources */,
 				DB6889EE258956AE009D4154 /* UIView+Gradient.swift in Sources */,
 				DB6889F3258956CB009D4154 /* Colors.swift in Sources */,
 				DBBEBBB0258A79D400BDA0B4 /* NearbyInteractor.swift in Sources */,
@@ -548,12 +583,17 @@
 				DB6889E32589544C009D4154 /* HomeInteractor.swift in Sources */,
 				DBBEBBD1258A7CED00BDA0B4 /* CityTableViewCell.swift in Sources */,
 				DBBEBBB3258A79D400BDA0B4 /* NearbyService.swift in Sources */,
+				DBBEBBDF258A80EE00BDA0B4 /* DetailsRouter.swift in Sources */,
 				DB6889E62589544C009D4154 /* HomeService.swift in Sources */,
+				DBBEBBE2258A80EE00BDA0B4 /* DetailsEntity.swift in Sources */,
 				DB6889D325895438009D4154 /* HomeAssembly.swift in Sources */,
 				DB6889E02589544C009D4154 /* HomePresenter.swift in Sources */,
+				DBBEBBF5258A827A00BDA0B4 /* DetailsAssembly.swift in Sources */,
 				DB6889E22589544C009D4154 /* HomeViewController.swift in Sources */,
 				DB6889E42589544C009D4154 /* HomeEntity.swift in Sources */,
+				DBBEBBE0258A80EE00BDA0B4 /* DetailsViewController.swift in Sources */,
 				DBBEBBB1258A79D400BDA0B4 /* NearbyEntity.swift in Sources */,
+				DBBEBBE1258A80EE00BDA0B4 /* DetailsInteractor.swift in Sources */,
 				DBBEBBAD258A79D400BDA0B4 /* NearbyPresenter.swift in Sources */,
 				DB68897F25895250009D4154 /* AppDelegate.swift in Sources */,
 				DBF1B49B25895DD500970062 /* CustomViews.swift in Sources */,

@@ -12,10 +12,16 @@ protocol NearbyPresenter: class {
     var view: NearbyViewController? { get set }
     var interactor: NearbyInteractor? { get set }
     var router: NearbyRouter? { get set }
+    
+    func presentDetails()
 }
 
 class NearbyPresenterImpl: NearbyPresenter {
     var view: NearbyViewController?
     var interactor: NearbyInteractor?
     var router: NearbyRouter?
+    
+    func presentDetails() {
+        router?.navigateToDetails()
+    }
 }

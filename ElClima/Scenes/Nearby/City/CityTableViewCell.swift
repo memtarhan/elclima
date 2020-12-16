@@ -10,6 +10,8 @@ import UIKit
 
 class CityTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

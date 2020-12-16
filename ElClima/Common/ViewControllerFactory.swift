@@ -10,6 +10,7 @@ import Foundation
 import Swinject
 
 protocol ViewControllerFactory {
+    var details: DetailsViewController { get }
     var home: HomeViewController { get }
     var nearby: NearbyViewController { get }
 }
@@ -20,6 +21,8 @@ class ViewControllerFactoryImpl: ViewControllerFactory {
     init(assembler: Assembler) {
         self.assembler = assembler
     }
+
+    var details: DetailsViewController { assembler.resolver.resolve(DetailsViewController.self)! }
 
     var home: HomeViewController { assembler.resolver.resolve(HomeViewController.self)! }
 

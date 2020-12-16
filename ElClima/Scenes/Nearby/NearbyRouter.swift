@@ -10,6 +10,8 @@ import UIKit
 
 protocol NearbyRouter: class {
     var view: NearbyViewController? { get set }
+    
+    func navigateToDetails()
 }
 
 class NearbyRouterImpl: NearbyRouter {
@@ -19,5 +21,9 @@ class NearbyRouterImpl: NearbyRouter {
 
     init(factory: ViewControllerFactory) {
         self.factory = factory
+    }
+    
+    func navigateToDetails() {
+        push(factory.details, from: view)
     }
 }

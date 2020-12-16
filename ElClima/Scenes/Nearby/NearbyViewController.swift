@@ -35,7 +35,13 @@ class NearbyViewControllerImpl: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
+    @objc private func didTapNext(_ sender: UIButton) {
+        presenter?.presentDetails()
+    }
+
     private func setup() {
+        navigationItem.backButtonTitle = ""
+        
         let cellNib = UINib(nibName: cellNibName, bundle: Bundle.main)
         tableView.register(cellNib, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.rowHeight = 120
@@ -56,6 +62,7 @@ extension NearbyViewControllerImpl: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? CityTableViewCell else { return UITableViewCell() }
+        cell.nextButton.addTarget(self, action: #selector(didTapNext(_:)), for: .touchUpInside)
         return cell
     }
 }
