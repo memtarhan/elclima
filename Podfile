@@ -8,6 +8,7 @@ target 'ElClima' do
   # Pods for ElClima
 
 pod 'Swinject'
+pod 'SwiftLint'
 
   target 'ElClimaTests' do
     inherit! :search_paths

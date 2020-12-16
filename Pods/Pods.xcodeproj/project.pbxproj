@@ -3,135 +3,163 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		0320BF6A9F60413E4CF1E8CFF0E5B6A4 /* Swinject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2534A2332EC2928B34D1BF864B2BA341 /* Swinject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		050C568E3BA73173980F463DFB08778B /* ServiceEntry.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3E46B08B43532597DFC9825A52BD4 /* ServiceEntry.TypeForwarding.swift */; };
+		0320BF6A9F60413E4CF1E8CFF0E5B6A4 /* Swinject.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC0BAAD4DB0400547E5F32C693949AE /* Swinject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050C568E3BA73173980F463DFB08778B /* ServiceEntry.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B2BF5EC14B2AD4A215B95029A2B7D /* ServiceEntry.TypeForwarding.swift */; };
 		050E4329EA20E6EA48528FF4214B4844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0B4C5F38682EE4ABBA0A406C5B45897C /* GraphIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE97B7B2F80A849EE0FBBA25031129 /* GraphIdentifier.swift */; };
-		0DF62AB9CAD21415249E4EAAC26E6E2B /* Pods-ElClima-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2D5495394E46212F5DD5DDC237372 /* Pods-ElClima-dummy.m */; };
-		12015E8F1145CB5D99F0D9BF5AD0F3A1 /* ObjectScope.Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62609A4B83BEE5CACF6B144B1245C6 /* ObjectScope.Standard.swift */; };
-		1D66FD7BED1FC46A46F33E685CB1ADA4 /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8112D90444327849585ED3FA07AFF /* ServiceEntry.swift */; };
+		0956FB6EE0E7A868AC4566CCF439E63F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0B4C5F38682EE4ABBA0A406C5B45897C /* GraphIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55523FA929F4AA0EF75A7D66F1572117 /* GraphIdentifier.swift */; };
+		0D18C81E932B9E0CD263E9B9B14490CE /* Pods-ElClima-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2D5495394E46212F5DD5DDC237372 /* Pods-ElClima-dummy.m */; };
+		12015E8F1145CB5D99F0D9BF5AD0F3A1 /* ObjectScope.Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B9AAB761BBB3465D70E396AA7C052 /* ObjectScope.Standard.swift */; };
+		1D66FD7BED1FC46A46F33E685CB1ADA4 /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE192EB5EAC24984977590252DB19AC7 /* ServiceEntry.swift */; };
 		2973E35B9B3F66683F9F4C99E0E1CDF1 /* Pods-ElClimaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E434C0F63B3CCB57AE9FB81AF537A56E /* Pods-ElClimaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BE6C561983E03729CCF1405B3F7FBA8 /* ObjectScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22995AA48610556B9777665DDF3B8229 /* ObjectScope.swift */; };
-		2DD5198D3A7F3176CB395B0610B1E480 /* SynchronizedResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F820558A4A3CDCA1C8E132F9644224 /* SynchronizedResolver.swift */; };
-		2EE54EC7ECDA42C13C4F48916BFDB12C /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C978EB077E5FE411426E5798253F94D4 /* DebugHelper.swift */; };
-		303039803386B5BFD467902899141CD2 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84110A524FB66D87E75670267827BD8F /* ServiceKey.swift */; };
+		2BE6C561983E03729CCF1405B3F7FBA8 /* ObjectScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6601D2868D31F86F8966A39EBE0BA4 /* ObjectScope.swift */; };
+		2DD5198D3A7F3176CB395B0610B1E480 /* SynchronizedResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE38D43F8538F3C4763F95EDFF00CA0 /* SynchronizedResolver.swift */; };
+		2EE54EC7ECDA42C13C4F48916BFDB12C /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B23804F319C8434FD0407E06E9498C /* DebugHelper.swift */; };
+		303039803386B5BFD467902899141CD2 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C76B2E59F407071BB8417FDA7757C /* ServiceKey.swift */; };
+		34C6A863872C8D1C06B598EA3D2B62BE /* Pods-ElClima-ElClimaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BF79EA16F1C03A957FA7C09D664D6D /* Pods-ElClima-ElClimaUITests-dummy.m */; };
 		3932342B93309BA0819123398F0650EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		410D90F0983E136B023488FD8C4031D6 /* InstanceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D61FDCC1A37DABC6532F8FB4CB8D43 /* InstanceWrapper.swift */; };
-		4C4218248134D49CD349F0BC5AD11EDC /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749F4AC3431688388EB876C11FE9034A /* UnavailableItems.swift */; };
-		5474FB639FA51C1899E1DBE4979AF188 /* InstanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326F12E23C66E1CCCD220EAA5F8A2827 /* InstanceStorage.swift */; };
-		5E6093189222761DABCF0ABB836CBD3F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB94F2399462C48C014C9477075457F /* Resolver.swift */; };
-		6424923BD4A1B59B52ED6B2E58A63871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6F14D5991C0E7E7FE61ECC622A73422A /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4DAA76BE8F1E514D336388431C224 /* Assembly.swift */; };
-		780004C45278A8C1D0E45FEC15A6190D /* Pods-ElClima-ElClimaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC24C798B493E32389EF9C04F6766E7F /* Pods-ElClima-ElClimaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		797F78E38B84AD04989D285EA28FBFEC /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DEE0A697C133636D2B1B9E23B8603 /* SynchronizedResolver.Arguments.swift */; };
-		7CD92B345D1D6558C44749DE5239BEF4 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E0D3A61D95664661A595974DEB023F /* Assembler.swift */; };
-		7D4DA079848B3E2E1F71DA76FA431194 /* Swinject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89086DCE24A417EF0D48BDA68D333D8C /* Swinject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		873EFEE555A5CAB5A7C2ED9929EF3427 /* Pods-ElClima-ElClimaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BF79EA16F1C03A957FA7C09D664D6D /* Pods-ElClima-ElClimaUITests-dummy.m */; };
-		890844AF46E3C2FB43D517E443D643F3 /* Pods-ElClima-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8688A6A77305FF60ACEF6D11FD8320 /* Pods-ElClima-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FDDD0C5DBEDEEFF943DC605F3BF1473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A26D8000B95488FED0701DF3FFF315F8 /* _Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA050F624BE659321EA42B90A781DC0 /* _Resolver.swift */; };
-		A4D25312A0CC165FB3DE4A4C7B499A25 /* Container.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F339676BDE62DF5DCF8F376D32380 /* Container.Arguments.swift */; };
-		AA3793CECFAC316243689B4CE15A6A44 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777549F8211BBDE23B5A316C906335B8 /* SpinLock.swift */; };
-		ADC9C062ED7E21B8581EBD3A277D5037 /* FunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AB5AA0A785CC5654B214425F506900 /* FunctionType.swift */; };
-		B03463759CFDAE9D9412A87358AB2A83 /* Container.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C823C8E60C956CF9EA92868A3BD89DA0 /* Container.TypeForwarding.swift */; };
-		B8761276C959268E69BE09250B9524BE /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B936132AB4F73CFAFD5BD6C04FB02 /* Container.swift */; };
-		BFE213244C740D20A8299107F05430F8 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F26846634F9E8B1141F178DF010A5 /* Behavior.swift */; };
-		CA3F0FC49C8C96F986BC4B7E0EDEA044 /* Swinject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB5C574FAFEAD16EC369BE76BC8B08B /* Swinject-dummy.m */; };
+		410D90F0983E136B023488FD8C4031D6 /* InstanceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D77074C14EE40950C911552260347A /* InstanceWrapper.swift */; };
+		4C4218248134D49CD349F0BC5AD11EDC /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175DB509B2B8FEC2452FAB37DEFAC60 /* UnavailableItems.swift */; };
+		5474FB639FA51C1899E1DBE4979AF188 /* InstanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FB1091F32948A7CFB5726D666F1FF /* InstanceStorage.swift */; };
+		5E6093189222761DABCF0ABB836CBD3F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A021950870225F3926C79C83978F516 /* Resolver.swift */; };
+		6F14D5991C0E7E7FE61ECC622A73422A /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB0714D164D925E47F7CBF21608987 /* Assembly.swift */; };
+		797F78E38B84AD04989D285EA28FBFEC /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D6609E1803D384D0D2D640424B2E1D /* SynchronizedResolver.Arguments.swift */; };
+		7CD92B345D1D6558C44749DE5239BEF4 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C28CDCE25135F20E622955270D411E6 /* Assembler.swift */; };
+		7D4DA079848B3E2E1F71DA76FA431194 /* Swinject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55150977F0B8EC144445E4E7C63F4F75 /* Swinject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D733540EA1B3AB110462D6F68A46A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		89BA3F8F5D64F39E11F81BE3475D396A /* Pods-ElClima-ElClimaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC24C798B493E32389EF9C04F6766E7F /* Pods-ElClima-ElClimaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96ED900FF36E2F70E4D8670E669489C1 /* Pods-ElClima-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8688A6A77305FF60ACEF6D11FD8320 /* Pods-ElClima-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A26D8000B95488FED0701DF3FFF315F8 /* _Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391F3D747212431764E42C3D9DDD615 /* _Resolver.swift */; };
+		A4D25312A0CC165FB3DE4A4C7B499A25 /* Container.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC217A523357C2B5FB8C389BCA2C03CF /* Container.Arguments.swift */; };
+		AA3793CECFAC316243689B4CE15A6A44 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2766FC3551C3A2F4B95BA9A9AD752D /* SpinLock.swift */; };
+		ADC9C062ED7E21B8581EBD3A277D5037 /* FunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588E9F0B6E7FCEAE6BB73BC2AD21C68 /* FunctionType.swift */; };
+		B03463759CFDAE9D9412A87358AB2A83 /* Container.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7398E7D4A5023C69FA6EA24267A082 /* Container.TypeForwarding.swift */; };
+		B8761276C959268E69BE09250B9524BE /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D43D2016BFA1350EA863CF02E8150DC /* Container.swift */; };
+		BFE213244C740D20A8299107F05430F8 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C954CB59CACC7426019C6F59CA978 /* Behavior.swift */; };
+		CA3F0FC49C8C96F986BC4B7E0EDEA044 /* Swinject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E703841AD5563EA556924C3E1BFF51AB /* Swinject-dummy.m */; };
 		D68C75C6DD0C330F9893F0194DCF513E /* Pods-ElClimaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AC512530EFAAB5680274F9F393B800 /* Pods-ElClimaTests-dummy.m */; };
-		E186B7C4EE38640DE8A407D3ADA3E743 /* Container.Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F6234A51DF4F20BB2A343E78B22E17 /* Container.Logging.swift */; };
+		E186B7C4EE38640DE8A407D3ADA3E743 /* Container.Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A92AE0ACC3D6092CA50926156B84307 /* Container.Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E72099BDA4C7D83A27F980B61819AF0 /* PBXContainerItemProxy */ = {
+		09F71C81F35F11F3DAA1BBD1CA009BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46065AF968A5A92D450BB21F7F24367D;
+			remoteInfo = Swinject;
+		};
+		0E6F670E34713CF537E0A06EFE6577E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		8C654C196CF8C95A55BF7CA20F0CB160 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2CFB3F2D3183E0856EC052A6F5067D3;
 			remoteInfo = "Pods-ElClima";
 		};
-		9A76B32D516B4444E4E85B5C7850105B /* PBXContainerItemProxy */ = {
+		DF239C64E13D899B04203CD690A8D4D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 46065AF968A5A92D450BB21F7F24367D;
 			remoteInfo = Swinject;
 		};
-		C69A6B2AEF8B9836BE4D68EA5EC2055B /* PBXContainerItemProxy */ = {
+		E7A0BA056E1D0C4B4D4DF45E3A378A34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 46065AF968A5A92D450BB21F7F24367D;
-			remoteInfo = Swinject;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F820558A4A3CDCA1C8E132F9644224 /* SynchronizedResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.swift; path = Sources/SynchronizedResolver.swift; sourceTree = "<group>"; };
+		005B2BF5EC14B2AD4A215B95029A2B7D /* ServiceEntry.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.TypeForwarding.swift; path = Sources/ServiceEntry.TypeForwarding.swift; sourceTree = "<group>"; };
+		0A92AE0ACC3D6092CA50926156B84307 /* Container.Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Logging.swift; path = Sources/Container.Logging.swift; sourceTree = "<group>"; };
 		0BD6F851012ECF260AD9C3971404E54E /* Pods-ElClima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElClima.debug.xcconfig"; sourceTree = "<group>"; };
+		0C7398E7D4A5023C69FA6EA24267A082 /* Container.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.TypeForwarding.swift; path = Sources/Container.TypeForwarding.swift; sourceTree = "<group>"; };
 		0FD8F1BA1CD5EE7E0A028CC66B809190 /* Pods-ElClima.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElClima.modulemap"; sourceTree = "<group>"; };
-		103F339676BDE62DF5DCF8F376D32380 /* Container.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Arguments.swift; path = Sources/Container.Arguments.swift; sourceTree = "<group>"; };
 		14750674B26B24F4CE47208279F789BD /* Pods-ElClima-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElClima-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1521A6D11E974574E06FA6B6662E6B24 /* Pods-ElClimaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElClimaTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		16780759DA840E761854202BD36A0023 /* Pods-ElClima-ElClimaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElClima-ElClimaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		22995AA48610556B9777665DDF3B8229 /* ObjectScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.swift; path = Sources/ObjectScope.swift; sourceTree = "<group>"; };
-		2534A2332EC2928B34D1BF864B2BA341 /* Swinject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swinject.h; path = Sources/Swinject.h; sourceTree = "<group>"; };
+		1A021950870225F3926C79C83978F516 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
 		275654D4829BC1FF3E1417D02D027709 /* Pods-ElClima-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElClima-acknowledgements.plist"; sourceTree = "<group>"; };
 		2DD64A843037D8B3C42D1737B7A86FEA /* Pods-ElClima-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElClima-frameworks.sh"; sourceTree = "<group>"; };
 		2EC158B32D902DBE3DD1DCECB866CB77 /* Pods-ElClima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElClima.release.xcconfig"; sourceTree = "<group>"; };
-		326F12E23C66E1CCCD220EAA5F8A2827 /* InstanceStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceStorage.swift; path = Sources/InstanceStorage.swift; sourceTree = "<group>"; };
-		3BD3E46B08B43532597DFC9825A52BD4 /* ServiceEntry.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.TypeForwarding.swift; path = Sources/ServiceEntry.TypeForwarding.swift; sourceTree = "<group>"; };
+		3C28CDCE25135F20E622955270D411E6 /* Assembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = Sources/Assembler.swift; sourceTree = "<group>"; };
 		3C5FE5BEFBAAE723E9132A98F290AC17 /* Pods-ElClima-ElClimaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElClima-ElClimaUITests-Info.plist"; sourceTree = "<group>"; };
-		402B936132AB4F73CFAFD5BD6C04FB02 /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
-		41AB5AA0A785CC5654B214425F506900 /* FunctionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionType.swift; path = Sources/FunctionType.swift; sourceTree = "<group>"; };
 		48BF79EA16F1C03A957FA7C09D664D6D /* Pods-ElClima-ElClimaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElClima-ElClimaUITests-dummy.m"; sourceTree = "<group>"; };
-		4BB8112D90444327849585ED3FA07AFF /* ServiceEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.swift; path = Sources/ServiceEntry.swift; sourceTree = "<group>"; };
+		4E6601D2868D31F86F8966A39EBE0BA4 /* ObjectScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.swift; path = Sources/ObjectScope.swift; sourceTree = "<group>"; };
 		4F851E080FC88CA32BEDC53A65746DD5 /* Pods-ElClima-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElClima-Info.plist"; sourceTree = "<group>"; };
 		536324D53F4D44000AABFA332ACB06FB /* Pods-ElClimaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElClimaTests-Info.plist"; sourceTree = "<group>"; };
 		54B2D5495394E46212F5DD5DDC237372 /* Pods-ElClima-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElClima-dummy.m"; sourceTree = "<group>"; };
 		54C51770E9E030724D6522A9D19FDD55 /* Pods_ElClimaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElClimaTests.framework; path = "Pods-ElClimaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59AA54FDF1E0B576C4FCFDF8F1906E13 /* Swinject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-prefix.pch"; sourceTree = "<group>"; };
-		5D6DEE0A697C133636D2B1B9E23B8603 /* SynchronizedResolver.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.Arguments.swift; path = Sources/SynchronizedResolver.Arguments.swift; sourceTree = "<group>"; };
+		55150977F0B8EC144445E4E7C63F4F75 /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
+		55523FA929F4AA0EF75A7D66F1572117 /* GraphIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphIdentifier.swift; path = Sources/GraphIdentifier.swift; sourceTree = "<group>"; };
+		621FB1091F32948A7CFB5726D666F1FF /* InstanceStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceStorage.swift; path = Sources/InstanceStorage.swift; sourceTree = "<group>"; };
+		64A838E9214623E165F25A6172C0E7DF /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		660B10A28BE9CD938CBD167EB1C094CA /* Pods-ElClima-ElClimaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElClima-ElClimaUITests.modulemap"; sourceTree = "<group>"; };
+		6BBB0714D164D925E47F7CBF21608987 /* Assembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = Sources/Assembly.swift; sourceTree = "<group>"; };
+		6C6B9AAB761BBB3465D70E396AA7C052 /* ObjectScope.Standard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.Standard.swift; path = Sources/ObjectScope.Standard.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		749F4AC3431688388EB876C11FE9034A /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
-		777549F8211BBDE23B5A316C906335B8 /* SpinLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinLock.swift; path = Sources/SpinLock.swift; sourceTree = "<group>"; };
-		77EE97B7B2F80A849EE0FBBA25031129 /* GraphIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphIdentifier.swift; path = Sources/GraphIdentifier.swift; sourceTree = "<group>"; };
-		7AB94F2399462C48C014C9477075457F /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
-		84110A524FB66D87E75670267827BD8F /* ServiceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceKey.swift; path = Sources/ServiceKey.swift; sourceTree = "<group>"; };
-		86A4DAA76BE8F1E514D336388431C224 /* Assembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = Sources/Assembly.swift; sourceTree = "<group>"; };
-		88E0D3A61D95664661A595974DEB023F /* Assembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = Sources/Assembler.swift; sourceTree = "<group>"; };
-		89086DCE24A417EF0D48BDA68D333D8C /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
+		7588E9F0B6E7FCEAE6BB73BC2AD21C68 /* FunctionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionType.swift; path = Sources/FunctionType.swift; sourceTree = "<group>"; };
+		7F1C954CB59CACC7426019C6F59CA978 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Behavior.swift; sourceTree = "<group>"; };
+		8175DB509B2B8FEC2452FAB37DEFAC60 /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
 		8ACA110EF3B35B3FCC08297B3799D9AD /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swinject.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B013FEA376F9E4D0A1C942E98926DF /* Pods-ElClimaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElClimaTests.release.xcconfig"; sourceTree = "<group>"; };
-		93D61FDCC1A37DABC6532F8FB4CB8D43 /* InstanceWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceWrapper.swift; path = Sources/InstanceWrapper.swift; sourceTree = "<group>"; };
 		95AC512530EFAAB5680274F9F393B800 /* Pods-ElClimaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElClimaTests-dummy.m"; sourceTree = "<group>"; };
-		9AB5C574FAFEAD16EC369BE76BC8B08B /* Swinject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swinject-dummy.m"; sourceTree = "<group>"; };
+		966D17121B284513C37B1CA9BAEC039C /* Swinject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.debug.xcconfig; sourceTree = "<group>"; };
+		9B2766FC3551C3A2F4B95BA9A9AD752D /* SpinLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinLock.swift; path = Sources/SpinLock.swift; sourceTree = "<group>"; };
+		9D43D2016BFA1350EA863CF02E8150DC /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E858040AE92F21559095DF613561C14 /* Pods_ElClima.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElClima.framework; path = "Pods-ElClima.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A09968FBC4A289F8035D7176D2DE0F24 /* Swinject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.release.xcconfig; sourceTree = "<group>"; };
-		A4F6234A51DF4F20BB2A343E78B22E17 /* Container.Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Logging.swift; path = Sources/Container.Logging.swift; sourceTree = "<group>"; };
+		9FC3A433043F8C1875001815F8C302CD /* Swinject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Swinject.modulemap; sourceTree = "<group>"; };
+		A2D77074C14EE40950C911552260347A /* InstanceWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceWrapper.swift; path = Sources/InstanceWrapper.swift; sourceTree = "<group>"; };
 		A882FE6DDFE4C9DC9664B85495E8579E /* Pods-ElClima-ElClimaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElClima-ElClimaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		ADAE15597551C5F14D6F574E87E4A692 /* Pods-ElClima-ElClimaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElClima-ElClimaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AFA050F624BE659321EA42B90A781DC0 /* _Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _Resolver.swift; path = Sources/_Resolver.swift; sourceTree = "<group>"; };
+		AFE38D43F8538F3C4763F95EDFF00CA0 /* SynchronizedResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.swift; path = Sources/SynchronizedResolver.swift; sourceTree = "<group>"; };
 		B3F352626144DD893FC271934AFCE453 /* Pods-ElClimaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElClimaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B43C76B2E59F407071BB8417FDA7757C /* ServiceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceKey.swift; path = Sources/ServiceKey.swift; sourceTree = "<group>"; };
 		B5B510BDB8EC69747AFCE4FC39A9A879 /* Pods-ElClima-ElClimaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElClima-ElClimaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B75D6371ACD76D7A0A89B6E4E7600894 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		B909CF86B221E18E105C944B8EA316FF /* Pods_ElClima_ElClimaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElClima_ElClimaUITests.framework; path = "Pods-ElClima-ElClimaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6E52843C5E718C470075B4E06A1E39 /* Pods-ElClima-ElClimaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElClima-ElClimaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		C823C8E60C956CF9EA92868A3BD89DA0 /* Container.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.TypeForwarding.swift; path = Sources/Container.TypeForwarding.swift; sourceTree = "<group>"; };
-		C978EB077E5FE411426E5798253F94D4 /* DebugHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugHelper.swift; path = Sources/DebugHelper.swift; sourceTree = "<group>"; };
+		BC217A523357C2B5FB8C389BCA2C03CF /* Container.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Arguments.swift; path = Sources/Container.Arguments.swift; sourceTree = "<group>"; };
+		BE192EB5EAC24984977590252DB19AC7 /* ServiceEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.swift; path = Sources/ServiceEntry.swift; sourceTree = "<group>"; };
+		C391F3D747212431764E42C3D9DDD615 /* _Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _Resolver.swift; path = Sources/_Resolver.swift; sourceTree = "<group>"; };
+		C7D6609E1803D384D0D2D640424B2E1D /* SynchronizedResolver.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.Arguments.swift; path = Sources/SynchronizedResolver.Arguments.swift; sourceTree = "<group>"; };
+		C9B23804F319C8434FD0407E06E9498C /* DebugHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugHelper.swift; path = Sources/DebugHelper.swift; sourceTree = "<group>"; };
 		CC24C798B493E32389EF9C04F6766E7F /* Pods-ElClima-ElClimaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElClima-ElClimaUITests-umbrella.h"; sourceTree = "<group>"; };
+		CDC0BAAD4DB0400547E5F32C693949AE /* Swinject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swinject.h; path = Sources/Swinject.h; sourceTree = "<group>"; };
 		D3B4AEE77E7D752F9E45710C33388105 /* Pods-ElClimaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElClimaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D3F6286BD189090F8430A13015CA5B9E /* Swinject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Swinject-Info.plist"; sourceTree = "<group>"; };
-		D90F26846634F9E8B1141F178DF010A5 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Behavior.swift; sourceTree = "<group>"; };
-		DAB5698E430A0A9CF5D471C3F9C0E954 /* Swinject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.debug.xcconfig; sourceTree = "<group>"; };
-		E326F238FD4878FF2ED3B5F67DAF329E /* Swinject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Swinject.modulemap; sourceTree = "<group>"; };
+		DD11A47063F58ABF5CD6D3C1278A17BD /* Swinject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Swinject-Info.plist"; sourceTree = "<group>"; };
 		E434C0F63B3CCB57AE9FB81AF537A56E /* Pods-ElClimaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElClimaTests-umbrella.h"; sourceTree = "<group>"; };
+		E703841AD5563EA556924C3E1BFF51AB /* Swinject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swinject-dummy.m"; sourceTree = "<group>"; };
 		E706A28415E3DB8DFEF49E28D487FBE4 /* Pods-ElClimaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElClimaTests.modulemap"; sourceTree = "<group>"; };
-		FA62609A4B83BEE5CACF6B144B1245C6 /* ObjectScope.Standard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.Standard.swift; path = Sources/ObjectScope.Standard.swift; sourceTree = "<group>"; };
+		EB4FE7893450896EC4657B3E14F201A4 /* Swinject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.release.xcconfig; sourceTree = "<group>"; };
+		F36DCF2DEC1D9E0B31B405E2F623D748 /* Swinject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-prefix.pch"; sourceTree = "<group>"; };
 		FF8688A6A77305FF60ACEF6D11FD8320 /* Pods-ElClima-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElClima-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,11 +172,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A39D31CFA2717A22909E333F7F1004 /* Frameworks */ = {
+		0909B61F14DEBB9DB80D92C6CD9B7847 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6424923BD4A1B59B52ED6B2E58A63871 /* Foundation.framework in Frameworks */,
+				7D733540EA1B3AB110462D6F68A46A9C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,25 +188,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC49728332A452A107CFB18A60501352 /* Frameworks */ = {
+		C7B9CAD93B96A8BDD545A04B96774178 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FDDD0C5DBEDEEFF943DC605F3BF1473 /* Foundation.framework in Frameworks */,
+				0956FB6EE0E7A868AC4566CCF439E63F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		134B6A36E2FE3B1321F9F07A8EE06CDB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EE0CBF93A2BAE8DA8A608CF6B7FE24B3 /* Swinject */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		1A0CE2837C13393366CFD1A0F383D90B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +237,16 @@
 			path = "Target Support Files/Pods-ElClima-ElClimaUITests";
 			sourceTree = "<group>";
 		};
+		5141A5E47BC2B4C735AACE65CDD24E7B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B75D6371ACD76D7A0A89B6E4E7600894 /* SwiftLint.debug.xcconfig */,
+				64A838E9214623E165F25A6172C0E7DF /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
 		57388839662A921DA551115CB8648268 /* Pods-ElClima */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +272,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		9505823611DF5DDE9834F7D5FF40C45A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FC3A433043F8C1875001815F8C302CD /* Swinject.modulemap */,
+				E703841AD5563EA556924C3E1BFF51AB /* Swinject-dummy.m */,
+				DD11A47063F58ABF5CD6D3C1278A17BD /* Swinject-Info.plist */,
+				F36DCF2DEC1D9E0B31B405E2F623D748 /* Swinject-prefix.pch */,
+				55150977F0B8EC144445E4E7C63F4F75 /* Swinject-umbrella.h */,
+				966D17121B284513C37B1CA9BAEC039C /* Swinject.debug.xcconfig */,
+				EB4FE7893450896EC4657B3E14F201A4 /* Swinject.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Swinject";
+			sourceTree = "<group>";
+		};
 		C6268183EADBFD75567AB828617802EF /* Pods-ElClimaTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +308,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				134B6A36E2FE3B1321F9F07A8EE06CDB /* Pods */,
+				F20D702410766C6B3E584838DA1A8699 /* Pods */,
 				292494682FCBAD35B8F9A9FCF39782CD /* Products */,
 				1A0CE2837C13393366CFD1A0F383D90B /* Targets Support Files */,
 			);
@@ -277,52 +322,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3B2CFFC0F48C7B59840FDBA03AB7E24 /* Support Files */ = {
+		EDA633F185ACBC7473D21800529C6409 /* Swinject */ = {
 			isa = PBXGroup;
 			children = (
-				E326F238FD4878FF2ED3B5F67DAF329E /* Swinject.modulemap */,
-				9AB5C574FAFEAD16EC369BE76BC8B08B /* Swinject-dummy.m */,
-				D3F6286BD189090F8430A13015CA5B9E /* Swinject-Info.plist */,
-				59AA54FDF1E0B576C4FCFDF8F1906E13 /* Swinject-prefix.pch */,
-				89086DCE24A417EF0D48BDA68D333D8C /* Swinject-umbrella.h */,
-				DAB5698E430A0A9CF5D471C3F9C0E954 /* Swinject.debug.xcconfig */,
-				A09968FBC4A289F8035D7176D2DE0F24 /* Swinject.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Swinject";
-			sourceTree = "<group>";
-		};
-		EE0CBF93A2BAE8DA8A608CF6B7FE24B3 /* Swinject */ = {
-			isa = PBXGroup;
-			children = (
-				AFA050F624BE659321EA42B90A781DC0 /* _Resolver.swift */,
-				88E0D3A61D95664661A595974DEB023F /* Assembler.swift */,
-				86A4DAA76BE8F1E514D336388431C224 /* Assembly.swift */,
-				D90F26846634F9E8B1141F178DF010A5 /* Behavior.swift */,
-				402B936132AB4F73CFAFD5BD6C04FB02 /* Container.swift */,
-				103F339676BDE62DF5DCF8F376D32380 /* Container.Arguments.swift */,
-				A4F6234A51DF4F20BB2A343E78B22E17 /* Container.Logging.swift */,
-				C823C8E60C956CF9EA92868A3BD89DA0 /* Container.TypeForwarding.swift */,
-				C978EB077E5FE411426E5798253F94D4 /* DebugHelper.swift */,
-				41AB5AA0A785CC5654B214425F506900 /* FunctionType.swift */,
-				77EE97B7B2F80A849EE0FBBA25031129 /* GraphIdentifier.swift */,
-				326F12E23C66E1CCCD220EAA5F8A2827 /* InstanceStorage.swift */,
-				93D61FDCC1A37DABC6532F8FB4CB8D43 /* InstanceWrapper.swift */,
-				22995AA48610556B9777665DDF3B8229 /* ObjectScope.swift */,
-				FA62609A4B83BEE5CACF6B144B1245C6 /* ObjectScope.Standard.swift */,
-				7AB94F2399462C48C014C9477075457F /* Resolver.swift */,
-				4BB8112D90444327849585ED3FA07AFF /* ServiceEntry.swift */,
-				3BD3E46B08B43532597DFC9825A52BD4 /* ServiceEntry.TypeForwarding.swift */,
-				84110A524FB66D87E75670267827BD8F /* ServiceKey.swift */,
-				777549F8211BBDE23B5A316C906335B8 /* SpinLock.swift */,
-				2534A2332EC2928B34D1BF864B2BA341 /* Swinject.h */,
-				01F820558A4A3CDCA1C8E132F9644224 /* SynchronizedResolver.swift */,
-				5D6DEE0A697C133636D2B1B9E23B8603 /* SynchronizedResolver.Arguments.swift */,
-				749F4AC3431688388EB876C11FE9034A /* UnavailableItems.swift */,
-				D3B2CFFC0F48C7B59840FDBA03AB7E24 /* Support Files */,
+				C391F3D747212431764E42C3D9DDD615 /* _Resolver.swift */,
+				3C28CDCE25135F20E622955270D411E6 /* Assembler.swift */,
+				6BBB0714D164D925E47F7CBF21608987 /* Assembly.swift */,
+				7F1C954CB59CACC7426019C6F59CA978 /* Behavior.swift */,
+				9D43D2016BFA1350EA863CF02E8150DC /* Container.swift */,
+				BC217A523357C2B5FB8C389BCA2C03CF /* Container.Arguments.swift */,
+				0A92AE0ACC3D6092CA50926156B84307 /* Container.Logging.swift */,
+				0C7398E7D4A5023C69FA6EA24267A082 /* Container.TypeForwarding.swift */,
+				C9B23804F319C8434FD0407E06E9498C /* DebugHelper.swift */,
+				7588E9F0B6E7FCEAE6BB73BC2AD21C68 /* FunctionType.swift */,
+				55523FA929F4AA0EF75A7D66F1572117 /* GraphIdentifier.swift */,
+				621FB1091F32948A7CFB5726D666F1FF /* InstanceStorage.swift */,
+				A2D77074C14EE40950C911552260347A /* InstanceWrapper.swift */,
+				4E6601D2868D31F86F8966A39EBE0BA4 /* ObjectScope.swift */,
+				6C6B9AAB761BBB3465D70E396AA7C052 /* ObjectScope.Standard.swift */,
+				1A021950870225F3926C79C83978F516 /* Resolver.swift */,
+				BE192EB5EAC24984977590252DB19AC7 /* ServiceEntry.swift */,
+				005B2BF5EC14B2AD4A215B95029A2B7D /* ServiceEntry.TypeForwarding.swift */,
+				B43C76B2E59F407071BB8417FDA7757C /* ServiceKey.swift */,
+				9B2766FC3551C3A2F4B95BA9A9AD752D /* SpinLock.swift */,
+				CDC0BAAD4DB0400547E5F32C693949AE /* Swinject.h */,
+				AFE38D43F8538F3C4763F95EDFF00CA0 /* SynchronizedResolver.swift */,
+				C7D6609E1803D384D0D2D640424B2E1D /* SynchronizedResolver.Arguments.swift */,
+				8175DB509B2B8FEC2452FAB37DEFAC60 /* UnavailableItems.swift */,
+				9505823611DF5DDE9834F7D5FF40C45A /* Support Files */,
 			);
 			name = Swinject;
 			path = Swinject;
+			sourceTree = "<group>";
+		};
+		F20D702410766C6B3E584838DA1A8699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F29A28F62DF67BD42665CB9B1DADF051 /* SwiftLint */,
+				EDA633F185ACBC7473D21800529C6409 /* Swinject */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F29A28F62DF67BD42665CB9B1DADF051 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				5141A5E47BC2B4C735AACE65CDD24E7B /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,11 +384,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C597CE2963C0DB62311ECBAB5BC86DAB /* Headers */ = {
+		8A6F800E1D4A4AB0C1628182127BA107 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				780004C45278A8C1D0E45FEC15A6190D /* Pods-ElClima-ElClimaUITests-umbrella.h in Headers */,
+				89BA3F8F5D64F39E11F81BE3475D396A /* Pods-ElClima-ElClimaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A570A4A65485CAF55FBA96B80D7A43B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96ED900FF36E2F70E4D8670E669489C1 /* Pods-ElClima-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,14 +406,6 @@
 			files = (
 				7D4DA079848B3E2E1F71DA76FA431194 /* Swinject-umbrella.h in Headers */,
 				0320BF6A9F60413E4CF1E8CFF0E5B6A4 /* Swinject.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC49A788D9646AC9D5087FCEA1013B24 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				890844AF46E3C2FB43D517E443D643F3 /* Pods-ElClima-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +442,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				8B4FCE616A7F874ADAE08DF1DCC66ABA /* PBXTargetDependency */,
+				0FBE8F502A9F518B2D27A1A4CAD0ABF1 /* PBXTargetDependency */,
 			);
 			name = "Pods-ElClimaTests";
 			productName = "Pods-ElClimaTests";
@@ -403,17 +451,18 @@
 		};
 		B2CFB3F2D3183E0856EC052A6F5067D3 /* Pods-ElClima */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A597C31496197ED761C38C7797E379B /* Build configuration list for PBXNativeTarget "Pods-ElClima" */;
+			buildConfigurationList = 1C3433DFB8A7BA1B2ED8AE11C849C22E /* Build configuration list for PBXNativeTarget "Pods-ElClima" */;
 			buildPhases = (
-				FC49A788D9646AC9D5087FCEA1013B24 /* Headers */,
-				D656B01B5C97451D54F45B80F1FCBC85 /* Sources */,
-				44A39D31CFA2717A22909E333F7F1004 /* Frameworks */,
-				F55AA94D3693A1A0FEF9373FABC609D5 /* Resources */,
+				A570A4A65485CAF55FBA96B80D7A43B6 /* Headers */,
+				4B74CD91AB3E9467175F6901DD13F421 /* Sources */,
+				C7B9CAD93B96A8BDD545A04B96774178 /* Frameworks */,
+				DD3F4A20494948E2E8397FB2A41CA216 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7D1F6E8BADAF04588F7BC0D749FE8382 /* PBXTargetDependency */,
+				BFEE78417528DEA6235FBD03CF6D1317 /* PBXTargetDependency */,
+				1271D9338219933AD4D59DF1A21951A8 /* PBXTargetDependency */,
 			);
 			name = "Pods-ElClima";
 			productName = "Pods-ElClima";
@@ -422,17 +471,18 @@
 		};
 		FA8944FD1F127479D7D78FFCE402723C /* Pods-ElClima-ElClimaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE9596D94E89A6733528072E497FF378 /* Build configuration list for PBXNativeTarget "Pods-ElClima-ElClimaUITests" */;
+			buildConfigurationList = 5E5393EF34C84FDFC717FE9D04D2A83B /* Build configuration list for PBXNativeTarget "Pods-ElClima-ElClimaUITests" */;
 			buildPhases = (
-				C597CE2963C0DB62311ECBAB5BC86DAB /* Headers */,
-				F0C0C918A3C42D397133CBAB99782580 /* Sources */,
-				FC49728332A452A107CFB18A60501352 /* Frameworks */,
-				D4FE4FF0D1374625B431566BF05F681B /* Resources */,
+				8A6F800E1D4A4AB0C1628182127BA107 /* Headers */,
+				94812761D1FAB1E63E598D97F4EFEDD1 /* Sources */,
+				0909B61F14DEBB9DB80D92C6CD9B7847 /* Frameworks */,
+				B014AF33A07F69D32CCB89F0558F0260 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				852FD7BA8CFDCD00E1AEB75A842C6352 /* PBXTargetDependency */,
+				C92607EF121EBA0253F911A8AF8E5395 /* PBXTargetDependency */,
+				2E1A8130D5084BD7CD0AC9C1ADF84334 /* PBXTargetDependency */,
 			);
 			name = "Pods-ElClima-ElClimaUITests";
 			productName = "Pods-ElClima-ElClimaUITests";
@@ -449,7 +499,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -464,6 +514,7 @@
 				B2CFB3F2D3183E0856EC052A6F5067D3 /* Pods-ElClima */,
 				FA8944FD1F127479D7D78FFCE402723C /* Pods-ElClima-ElClimaUITests */,
 				55DF91A40AE4A297039DBB46A37650EA /* Pods-ElClimaTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 				46065AF968A5A92D450BB21F7F24367D /* Swinject */,
 			);
 		};
@@ -477,6 +528,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B014AF33A07F69D32CCB89F0558F0260 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B35665751773D98913C552D1113B688A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,14 +542,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4FE4FF0D1374625B431566BF05F681B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F55AA94D3693A1A0FEF9373FABC609D5 /* Resources */ = {
+		DD3F4A20494948E2E8397FB2A41CA216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,11 +552,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B74CD91AB3E9467175F6901DD13F421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D18C81E932B9E0CD263E9B9B14490CE /* Pods-ElClima-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AC8B579C8455FEAF518EE9B29841E9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D68C75C6DD0C330F9893F0194DCF513E /* Pods-ElClimaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94812761D1FAB1E63E598D97F4EFEDD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C6A863872C8D1C06B598EA3D2B62BE /* Pods-ElClima-ElClimaUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,118 +607,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D656B01B5C97451D54F45B80F1FCBC85 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DF62AB9CAD21415249E4EAAC26E6E2B /* Pods-ElClima-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0C0C918A3C42D397133CBAB99782580 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				873EFEE555A5CAB5A7C2ED9929EF3427 /* Pods-ElClima-ElClimaUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7D1F6E8BADAF04588F7BC0D749FE8382 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Swinject;
-			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
-			targetProxy = 9A76B32D516B4444E4E85B5C7850105B /* PBXContainerItemProxy */;
-		};
-		852FD7BA8CFDCD00E1AEB75A842C6352 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Swinject;
-			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
-			targetProxy = C69A6B2AEF8B9836BE4D68EA5EC2055B /* PBXContainerItemProxy */;
-		};
-		8B4FCE616A7F874ADAE08DF1DCC66ABA /* PBXTargetDependency */ = {
+		0FBE8F502A9F518B2D27A1A4CAD0ABF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ElClima";
 			target = B2CFB3F2D3183E0856EC052A6F5067D3 /* Pods-ElClima */;
-			targetProxy = 6E72099BDA4C7D83A27F980B61819AF0 /* PBXContainerItemProxy */;
+			targetProxy = 8C654C196CF8C95A55BF7CA20F0CB160 /* PBXContainerItemProxy */;
+		};
+		1271D9338219933AD4D59DF1A21951A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swinject;
+			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
+			targetProxy = DF239C64E13D899B04203CD690A8D4D0 /* PBXContainerItemProxy */;
+		};
+		2E1A8130D5084BD7CD0AC9C1ADF84334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swinject;
+			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
+			targetProxy = 09F71C81F35F11F3DAA1BBD1CA009BC3 /* PBXContainerItemProxy */;
+		};
+		BFEE78417528DEA6235FBD03CF6D1317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 0E6F670E34713CF537E0A06EFE6577E5 /* PBXContainerItemProxy */;
+		};
+		C92607EF121EBA0253F911A8AF8E5395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = E7A0BA056E1D0C4B4D4DF45E3A378A34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		331927A1808466F7E431499CEA8AC10F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAB5698E430A0A9CF5D471C3F9C0E954 /* Swinject.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
-				PRODUCT_MODULE_NAME = Swinject;
-				PRODUCT_NAME = Swinject;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3B3DF70A0A39B9DB5923E13EEC253D1D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BD6F851012ECF260AD9C3971404E54E /* Pods-ElClima.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		79F4034025090913291EFE5DE7F08E5B /* Release */ = {
+		1665DDE9A440105F4A9AB13552A0C3B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16780759DA840E761854202BD36A0023 /* Pods-ElClima-ElClimaUITests.release.xcconfig */;
 			buildSettings = {
@@ -689,12 +681,10 @@
 			};
 			name = Release;
 		};
-		7DDA8B9ACB865097E71E7B1221AEA9AC /* Release */ = {
+		331927A1808466F7E431499CEA8AC10F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EC158B32D902DBE3DD1DCECB866CB77 /* Pods-ElClima.release.xcconfig */;
+			baseConfigurationReference = 966D17121B284513C37B1CA9BAEC039C /* Swinject.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -703,29 +693,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				PRODUCT_MODULE_NAME = Swinject;
+				PRODUCT_NAME = Swinject;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		8C16AA14FF830C702BBEC43FB2C9EA90 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -833,7 +821,7 @@
 		};
 		910366F1EC59490DAE7B6C7AD8BC9C76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A09968FBC4A289F8035D7176D2DE0F24 /* Swinject.release.xcconfig */;
+			baseConfigurationReference = EB4FE7893450896EC4657B3E14F201A4 /* Swinject.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -865,6 +853,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		992E132D5542FA3E7109C7415F70EE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD6F851012ECF260AD9C3971404E54E /* Pods-ElClima.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -928,6 +953,23 @@
 			};
 			name = Release;
 		};
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A838E9214623E165F25A6172C0E7DF /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		AE6164130EA5F6EBE529FD81C08D29BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3F352626144DD893FC271934AFCE453 /* Pods-ElClimaTests.debug.xcconfig */;
@@ -965,7 +1007,7 @@
 			};
 			name = Debug;
 		};
-		B52387B2F0453948F4B2B3FB6183FC5D /* Debug */ = {
+		DE21461FB64986A6F5DB62ED9FC51CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ADAE15597551C5F14D6F574E87E4A692 /* Pods-ElClima-ElClimaUITests.debug.xcconfig */;
 			buildSettings = {
@@ -1002,9 +1044,72 @@
 			};
 			name = Debug;
 		};
+		E6063443E980300ACCF4F253F7B46AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC158B32D902DBE3DD1DCECB866CB77 /* Pods-ElClima.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElClima/Pods-ElClima.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75D6371ACD76D7A0A89B6E4E7600894 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C3433DFB8A7BA1B2ED8AE11C849C22E /* Build configuration list for PBXNativeTarget "Pods-ElClima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992E132D5542FA3E7109C7415F70EE78 /* Debug */,
+				E6063443E980300ACCF4F253F7B46AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1014,11 +1119,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A597C31496197ED761C38C7797E379B /* Build configuration list for PBXNativeTarget "Pods-ElClima" */ = {
+		5E5393EF34C84FDFC717FE9D04D2A83B /* Build configuration list for PBXNativeTarget "Pods-ElClima-ElClimaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B3DF70A0A39B9DB5923E13EEC253D1D /* Debug */,
-				7DDA8B9ACB865097E71E7B1221AEA9AC /* Release */,
+				DE21461FB64986A6F5DB62ED9FC51CA4 /* Debug */,
+				1665DDE9A440105F4A9AB13552A0C3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1032,11 +1137,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE9596D94E89A6733528072E497FF378 /* Build configuration list for PBXNativeTarget "Pods-ElClima-ElClimaUITests" */ = {
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B52387B2F0453948F4B2B3FB6183FC5D /* Debug */,
-				79F4034025090913291EFE5DE7F08E5B /* Release */,
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,16 +1,20 @@
 PODS:
+  - SwiftLint (0.42.0)
   - Swinject (2.7.1)
 
 DEPENDENCIES:
+  - SwiftLint
   - Swinject
 
 SPEC REPOS:
   trunk:
+    - SwiftLint
     - Swinject
 
 SPEC CHECKSUMS:
+  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: f0aac0a4458b684c4e9c12b48be38c428a874cfc
+PODFILE CHECKSUM: 40420e9f39003fa703862a62cb1dda1034c6dfc3
 
 COCOAPODS: 1.10.0

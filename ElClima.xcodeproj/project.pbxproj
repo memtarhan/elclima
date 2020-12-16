@@ -339,6 +339,7 @@
 				DB68897825895250009D4154 /* Frameworks */,
 				DB68897925895250009D4154 /* Resources */,
 				6339412DD9B798BB92EB2B4E /* [CP] Embed Pods Frameworks */,
+				DBBEBBFC258A872200BDA0B4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -539,6 +540,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElClima/Pods-ElClima-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DBBEBBFC258A872200BDA0B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint \nelse \n    echo \"warning: swiftlint not installeed\"\nfi\n";
 		};
 		F1A50372709C57A1FC15EC65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
