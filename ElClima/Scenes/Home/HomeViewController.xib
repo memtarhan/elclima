@@ -38,8 +38,29 @@
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-LW-o9X" customClass="TabBarView" customModule="ElClima" customModuleProvider="target">
                     <rect key="frame" x="32" y="774" width="350" height="96"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zc-x4-L9K">
+                            <rect key="frame" x="273" y="25.5" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="BWg-CP-sTo"/>
+                                <constraint firstAttribute="height" constant="45" id="hQd-5O-HBc"/>
+                            </constraints>
+                            <state key="normal" image="nearby"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El clima" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6O-k9-0a1">
+                            <rect key="frame" x="32" y="21" width="209" height="70"/>
+                            <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="60"/>
+                            <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9Zc-x4-L9K" secondAttribute="trailing" constant="32" id="18O-nT-mKH"/>
+                        <constraint firstItem="9Zc-x4-L9K" firstAttribute="centerY" secondItem="pVp-LW-o9X" secondAttribute="centerY" id="2aq-k9-eY4"/>
+                        <constraint firstItem="u6O-k9-0a1" firstAttribute="centerY" secondItem="pVp-LW-o9X" secondAttribute="centerY" constant="8" id="6yS-SE-VbL"/>
+                        <constraint firstItem="9Zc-x4-L9K" firstAttribute="leading" secondItem="u6O-k9-0a1" secondAttribute="trailing" constant="32" id="F2p-cN-rO5"/>
+                        <constraint firstItem="u6O-k9-0a1" firstAttribute="leading" secondItem="pVp-LW-o9X" secondAttribute="leading" constant="32" id="LS9-Ay-7te"/>
                         <constraint firstAttribute="height" constant="96" id="Uct-xa-pu9"/>
                     </constraints>
                 </view>
@@ -66,10 +87,11 @@
                 <constraint firstItem="PFp-lU-bAo" firstAttribute="top" secondItem="W2a-Q8-QPv" secondAttribute="bottom" constant="20" id="urd-SL-k0N"/>
                 <constraint firstItem="W2a-Q8-QPv" firstAttribute="top" secondItem="b5y-49-7nn" secondAttribute="bottom" constant="32" id="yRE-x4-hYc"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="152"/>
+            <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
         </view>
     </objects>
     <resources>
         <image name="006-blizzard" width="512" height="512"/>
+        <image name="nearby" width="512" height="512"/>
     </resources>
 </document>
