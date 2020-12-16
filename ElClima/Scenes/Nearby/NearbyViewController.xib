@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearbyViewControllerImpl" customModule="ElClima" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="TuF-6c-P9H" id="BlP-g7-1N8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,8 +18,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientBackgroundView" customModule="ElClima" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TuF-6c-P9H">
+                    <rect key="frame" x="20" y="0.0" width="374" height="876"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ega-J9-jSb"/>
+                        <outlet property="delegate" destination="-1" id="cr8-bz-WSb"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TuF-6c-P9H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1t1-ex-Vi7"/>
+                <constraint firstAttribute="bottom" secondItem="TuF-6c-P9H" secondAttribute="bottom" constant="20" id="TJm-hq-Sf4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TuF-6c-P9H" secondAttribute="trailing" constant="20" id="uAL-co-O78"/>
+                <constraint firstItem="TuF-6c-P9H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uCs-g9-W3k"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="152"/>
         </view>
     </objects>

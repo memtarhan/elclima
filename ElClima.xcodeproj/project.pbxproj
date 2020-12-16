@@ -35,6 +35,8 @@
 		DBBEBBB3258A79D400BDA0B4 /* NearbyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBAC258A79D400BDA0B4 /* NearbyService.swift */; };
 		DBBEBBBB258A79EA00BDA0B4 /* NearbyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBBA258A79EA00BDA0B4 /* NearbyAssembly.swift */; };
 		DBBEBBC7258A7A6F00BDA0B4 /* Router+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBC6258A7A6F00BDA0B4 /* Router+.swift */; };
+		DBBEBBD1258A7CED00BDA0B4 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEBBCF258A7CED00BDA0B4 /* CityTableViewCell.swift */; };
+		DBBEBBD2258A7CED00BDA0B4 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBBEBBD0258A7CED00BDA0B4 /* CityTableViewCell.xib */; };
 		DBF1B49B25895DD500970062 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF1B49A25895DD500970062 /* CustomViews.swift */; };
 		DF1D1E3F56338C32C41D9F47 /* Pods_ElClimaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +100,8 @@
 		DBBEBBAC258A79D400BDA0B4 /* NearbyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyService.swift; sourceTree = "<group>"; };
 		DBBEBBBA258A79EA00BDA0B4 /* NearbyAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyAssembly.swift; sourceTree = "<group>"; };
 		DBBEBBC6258A7A6F00BDA0B4 /* Router+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+.swift"; sourceTree = "<group>"; };
+		DBBEBBCF258A7CED00BDA0B4 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		DBBEBBD0258A7CED00BDA0B4 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		DBF1B49A25895DD500970062 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,6 +261,7 @@
 		DBBEBBA5258A79C400BDA0B4 /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				DBBEBBCB258A7CB000BDA0B4 /* City */,
 				DBBEBBAA258A79D400BDA0B4 /* NearbyEntity.swift */,
 				DBBEBBA9258A79D400BDA0B4 /* NearbyInteractor.swift */,
 				DBBEBBA6258A79D400BDA0B4 /* NearbyPresenter.swift */,
@@ -266,6 +271,15 @@
 				DBBEBBAB258A79D400BDA0B4 /* NearbyViewController.xib */,
 			);
 			path = Nearby;
+			sourceTree = "<group>";
+		};
+		DBBEBBCB258A7CB000BDA0B4 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				DBBEBBCF258A7CED00BDA0B4 /* CityTableViewCell.swift */,
+				DBBEBBD0258A7CED00BDA0B4 /* CityTableViewCell.xib */,
+			);
+			path = City;
 			sourceTree = "<group>";
 		};
 		DBF766706BB396308DF0D511 /* Pods */ = {
@@ -390,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBEBBD2258A7CED00BDA0B4 /* CityTableViewCell.xib in Resources */,
 				DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */,
 				DBBEBBB2258A79D400BDA0B4 /* NearbyViewController.xib in Resources */,
 				DB68898825895251009D4154 /* Assets.xcassets in Resources */,
@@ -531,6 +546,7 @@
 				DB6889C2258953DC009D4154 /* ViewControllerAssembly.swift in Sources */,
 				DBBEBBAF258A79D400BDA0B4 /* NearbyViewController.swift in Sources */,
 				DB6889E32589544C009D4154 /* HomeInteractor.swift in Sources */,
+				DBBEBBD1258A7CED00BDA0B4 /* CityTableViewCell.swift in Sources */,
 				DBBEBBB3258A79D400BDA0B4 /* NearbyService.swift in Sources */,
 				DB6889E62589544C009D4154 /* HomeService.swift in Sources */,
 				DB6889D325895438009D4154 /* HomeAssembly.swift in Sources */,

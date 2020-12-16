@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// - Back indicator
         appearance.backIndicatorImage = UIImage()
         appearance.backIndicatorTransitionMaskImage = UIImage()
-        var backButtonImage = UIImage(named: "back-button-indicator")
+        var backButtonImage = UIImage(named: "left-arrow")
         backButtonImage = backButtonImage?.stretchableImage(withLeftCapWidth: 20, topCapHeight: 30)
         UIBarButtonItem.appearance().setBackButtonBackgroundImage(backButtonImage, for: .normal, barMetrics: .default)
     }

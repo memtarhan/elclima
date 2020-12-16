@@ -15,6 +15,11 @@ protocol NearbyViewController: class {
 class NearbyViewControllerImpl: UIViewController {
     var presenter: NearbyPresenter?
 
+    @IBOutlet var tableView: UITableView!
+
+    private let cellReuseIdentifier = "City"
+    private let cellNibName = "CityTableViewCell"
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -22,13 +27,18 @@ class NearbyViewControllerImpl: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        localize()
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+
     private func setup() {
-    }
-    
-    private func localize() {
+        let cellNib = UINib(nibName: cellNibName, bundle: Bundle.main)
+        tableView.register(cellNib, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.rowHeight = 120
     }
 }
 
@@ -37,3 +47,15 @@ class NearbyViewControllerImpl: UIViewController {
 extension NearbyViewControllerImpl: NearbyViewController {
 }
 
+// MARK: - UITableViewDelegate, UITableViewDataSource
+
+extension NearbyViewControllerImpl: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? CityTableViewCell else { return UITableViewCell() }
+        return cell
+    }
+}
