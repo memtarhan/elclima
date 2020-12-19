@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="PlaceTableViewCell" customModule="ElClima" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-7U-hQy" customClass="TabBarView" customModule="ElClima" customModuleProvider="target">
+                        <rect key="frame" x="12" y="11" width="324" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cinema" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVW-xq-lcD">
+                                <rect key="frame" x="32" y="39" width="219" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dVW-xq-lcD" firstAttribute="leading" secondItem="ncd-7U-hQy" secondAttribute="leading" constant="32" id="6rf-8E-yKa"/>
+                            <constraint firstItem="dVW-xq-lcD" firstAttribute="centerY" secondItem="ncd-7U-hQy" secondAttribute="centerY" id="f6W-AB-f2Q"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.4 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7Y-SP-C8m">
+                        <rect key="frame" x="271" y="51" width="45" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Qp6-Er-RER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ncd-7U-hQy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="7Iy-EI-0Cl"/>
+                    <constraint firstAttribute="bottom" secondItem="ncd-7U-hQy" secondAttribute="bottom" constant="11" id="Fd3-rp-fFI"/>
+                    <constraint firstItem="o7Y-SP-C8m" firstAttribute="leading" secondItem="dVW-xq-lcD" secondAttribute="trailing" constant="8" id="J65-8F-e5X"/>
+                    <constraint firstAttribute="trailing" secondItem="o7Y-SP-C8m" secondAttribute="trailing" constant="32" id="LKs-3Y-Rel"/>
+                    <constraint firstItem="ncd-7U-hQy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="ZKL-CA-iWv"/>
+                    <constraint firstAttribute="trailing" secondItem="ncd-7U-hQy" secondAttribute="trailing" constant="12" id="kBZ-7w-gQZ"/>
+                    <constraint firstItem="o7Y-SP-C8m" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qQm-Jm-VTD"/>
+                    <constraint firstItem="ncd-7U-hQy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="waO-J2-9ck"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="distanceLabel" destination="o7Y-SP-C8m" id="IhU-K6-8qF"/>
+                <outlet property="nameLabel" destination="dVW-xq-lcD" id="8l7-c0-odz"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="94.419642857142847"/>
+        </tableViewCell>
+    </objects>
+</document>

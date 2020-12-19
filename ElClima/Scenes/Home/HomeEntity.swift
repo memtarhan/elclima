@@ -9,4 +9,11 @@
 import UIKit
 
 struct HomeEntity {
+    struct Place {
+        struct ViewModel {
+            let name: String
+            let distance: String
+            let image: UIImage?
+        }
+    }
 }

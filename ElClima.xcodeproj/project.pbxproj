@@ -10,6 +10,8 @@
 		62B971425479FD273115DE9A /* Pods_ElClima_ElClimaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D04DBF419B6E169CA4EC987 /* Pods_ElClima_ElClimaUITests.framework */; };
 		8D27ACDFAA4377BEEDA61CCF /* Pods_ElClima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412C4F17A4F2F7EB3ED513B /* Pods_ElClima.framework */; };
 		DB2B6D17258EA47400FD45CB /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2B6D16258EA47400FD45CB /* DebugLog.swift */; };
+		DB2B6D22258EB0E900FD45CB /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2B6D20258EB0E900FD45CB /* PlaceTableViewCell.swift */; };
+		DB2B6D23258EB0E900FD45CB /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2B6D21258EB0E900FD45CB /* PlaceTableViewCell.xib */; };
 		DB68897F25895250009D4154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68897E25895250009D4154 /* AppDelegate.swift */; };
 		DB68898825895251009D4154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB68898725895251009D4154 /* Assets.xcassets */; };
 		DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68898925895251009D4154 /* LaunchScreen.storyboard */; };
@@ -78,6 +80,8 @@
 		BA345258A5738AB42ADD4C55 /* Pods-ElClima-ElClimaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClima-ElClimaUITests.release.xcconfig"; path = "Target Support Files/Pods-ElClima-ElClimaUITests/Pods-ElClima-ElClimaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D9A5778CAC169A99B97F9DEE /* Pods-ElClimaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClimaTests.release.xcconfig"; path = "Target Support Files/Pods-ElClimaTests/Pods-ElClimaTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB2B6D16258EA47400FD45CB /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		DB2B6D20258EB0E900FD45CB /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		DB2B6D21258EB0E900FD45CB /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		DB68897B25895250009D4154 /* ElClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB68897E25895250009D4154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB68898725895251009D4154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +163,15 @@
 				21589F5F790F87124AB21969 /* Pods_ElClimaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB2B6D1F258EB0DB00FD45CB /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				DB2B6D20258EB0E900FD45CB /* PlaceTableViewCell.swift */,
+				DB2B6D21258EB0E900FD45CB /* PlaceTableViewCell.xib */,
+			);
+			path = Place;
 			sourceTree = "<group>";
 		};
 		DB68897225895250009D4154 = {
@@ -268,6 +281,7 @@
 		DB6889D825895442009D4154 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DB2B6D1F258EB0DB00FD45CB /* Place */,
 				DB6889DD2589544C009D4154 /* HomeEntity.swift */,
 				DB6889DC2589544C009D4154 /* HomeInteractor.swift */,
 				DB6889D92589544C009D4154 /* HomePresenter.swift */,
@@ -440,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2B6D23258EB0E900FD45CB /* PlaceTableViewCell.xib in Resources */,
 				DBBEBBD2258A7CED00BDA0B4 /* CityTableViewCell.xib in Resources */,
 				DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */,
 				DBBEBBB2258A79D400BDA0B4 /* NearbyViewController.xib in Resources */,
@@ -601,6 +616,7 @@
 				DB6889E12589544C009D4154 /* HomeRouter.swift in Sources */,
 				DB6889C2258953DC009D4154 /* ViewControllerAssembly.swift in Sources */,
 				DBBEBBAF258A79D400BDA0B4 /* NearbyViewController.swift in Sources */,
+				DB2B6D22258EB0E900FD45CB /* PlaceTableViewCell.swift in Sources */,
 				DB6889E32589544C009D4154 /* HomeInteractor.swift in Sources */,
 				DBBEBBD1258A7CED00BDA0B4 /* CityTableViewCell.swift in Sources */,
 				DBBEBBB3258A79D400BDA0B4 /* NearbyService.swift in Sources */,

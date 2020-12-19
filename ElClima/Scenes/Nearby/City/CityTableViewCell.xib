@@ -47,7 +47,6 @@
                             <constraint firstItem="HcX-dE-cLC" firstAttribute="centerY" secondItem="K3F-3W-fee" secondAttribute="centerY" id="T2p-yr-WO6"/>
                             <constraint firstItem="io4-JU-37D" firstAttribute="centerX" secondItem="K3F-3W-fee" secondAttribute="centerX" id="Un7-uc-X7N"/>
                             <constraint firstItem="io4-JU-37D" firstAttribute="leading" secondItem="HcX-dE-cLC" secondAttribute="trailing" constant="8" id="a68-Nv-UNT"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="bgZ-64-Ejk"/>
                             <constraint firstItem="io4-JU-37D" firstAttribute="centerY" secondItem="K3F-3W-fee" secondAttribute="centerY" id="dfG-Xi-QpT"/>
                             <constraint firstItem="thL-Uv-dSe" firstAttribute="leading" secondItem="io4-JU-37D" secondAttribute="trailing" constant="8" id="jkb-VD-qbf"/>
                         </constraints>

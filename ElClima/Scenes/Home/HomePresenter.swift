@@ -15,7 +15,7 @@ protocol HomePresenter: class {
     var router: HomeRouter? { get set }
 
     func presentNearby()
-    func presentLocalSearch(for query: String, at region: MKCoordinateRegion)
+    func presentLocalSearch(for query: String, at region: MKCoordinateRegion, currentLocation location: CLLocation)
 }
 
 class HomePresenterImpl: HomePresenter {
@@ -27,7 +27,7 @@ class HomePresenterImpl: HomePresenter {
         router?.navigateToNearby()
     }
 
-    func presentLocalSearch(for query: String, at region: MKCoordinateRegion) {
+    func presentLocalSearch(for query: String, at region: MKCoordinateRegion, currentLocation location: CLLocation) {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = query
         request.region = region
@@ -39,7 +39,21 @@ class HomePresenterImpl: HomePresenter {
                 return
             }
             guard let response = response else { return }
-            debugLog(self, "MKLocalSearch response: \(response)")
+            let viewModels = response.mapItems.map { (mapItem) -> HomeEntity.Place.ViewModel in
+                debugLog(self, "Place name: \(mapItem.name!)")
+                let placemarkLocation = CLLocation(latitude: mapItem.placemark.coordinate.latitude, longitude: mapItem.placemark.coordinate.longitude)
+                let distance = location.distance(from: placemarkLocation)
+                let distanceFormatter = MKDistanceFormatter()
+                distanceFormatter.unitStyle = .abbreviated
+                let distanceString = distanceFormatter.string(fromDistance: distance)
+                debugLog(self, "Place distance: \(distanceString)")
+                let image = UIImage(named: query)
+
+                let viewModel = HomeEntity.Place.ViewModel(name: mapItem.name!, distance: distanceString, image: image)
+                return viewModel
+            }
+            
+            self.view?.display(viewModels)
         }
     }
 }
