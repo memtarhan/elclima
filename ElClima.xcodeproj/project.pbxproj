@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		62B971425479FD273115DE9A /* Pods_ElClima_ElClimaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D04DBF419B6E169CA4EC987 /* Pods_ElClima_ElClimaUITests.framework */; };
 		8D27ACDFAA4377BEEDA61CCF /* Pods_ElClima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412C4F17A4F2F7EB3ED513B /* Pods_ElClima.framework */; };
+		DB2B6D17258EA47400FD45CB /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2B6D16258EA47400FD45CB /* DebugLog.swift */; };
 		DB68897F25895250009D4154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68897E25895250009D4154 /* AppDelegate.swift */; };
 		DB68898825895251009D4154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB68898725895251009D4154 /* Assets.xcassets */; };
 		DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68898925895251009D4154 /* LaunchScreen.storyboard */; };
@@ -76,6 +77,7 @@
 		93F9F3E65C12849C5A76D421 /* Pods-ElClima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClima.release.xcconfig"; path = "Target Support Files/Pods-ElClima/Pods-ElClima.release.xcconfig"; sourceTree = "<group>"; };
 		BA345258A5738AB42ADD4C55 /* Pods-ElClima-ElClimaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClima-ElClimaUITests.release.xcconfig"; path = "Target Support Files/Pods-ElClima-ElClimaUITests/Pods-ElClima-ElClimaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D9A5778CAC169A99B97F9DEE /* Pods-ElClimaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElClimaTests.release.xcconfig"; path = "Target Support Files/Pods-ElClimaTests/Pods-ElClimaTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB2B6D16258EA47400FD45CB /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
 		DB68897B25895250009D4154 /* ElClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB68897E25895250009D4154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB68898725895251009D4154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				DBBEBBC6258A7A6F00BDA0B4 /* Router+.swift */,
 				DB6889ED258956AE009D4154 /* UIView+Gradient.swift */,
 				DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */,
+				DB2B6D16258EA47400FD45CB /* DebugLog.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				DB6889D325895438009D4154 /* HomeAssembly.swift in Sources */,
 				DB6889E02589544C009D4154 /* HomePresenter.swift in Sources */,
 				DBBEBBF5258A827A00BDA0B4 /* DetailsAssembly.swift in Sources */,
+				DB2B6D17258EA47400FD45CB /* DebugLog.swift in Sources */,
 				DB6889E22589544C009D4154 /* HomeViewController.swift in Sources */,
 				DB6889E42589544C009D4154 /* HomeEntity.swift in Sources */,
 				DBBEBBE0258A80EE00BDA0B4 /* DetailsViewController.swift in Sources */,
