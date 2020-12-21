@@ -16,4 +16,13 @@ struct HomeEntity {
             let image: UIImage?
         }
     }
+    
+    struct City {
+        struct ViewModel {
+            let title: String
+            let icon: URL?
+            let weather: String
+            let temperature: String
+        }
+    }
 }

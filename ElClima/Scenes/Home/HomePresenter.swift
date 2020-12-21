@@ -14,8 +14,11 @@ protocol HomePresenter: class {
     var interactor: HomeInteractor? { get set }
     var router: HomeRouter? { get set }
 
+    func present()
     func presentNearby()
     func presentLocalSearch(for query: String, at region: MKCoordinateRegion, currentLocation location: CLLocation)
+
+    func update(_ response: CityDetailsResponse)
 }
 
 class HomePresenterImpl: HomePresenter {
@@ -23,11 +26,16 @@ class HomePresenterImpl: HomePresenter {
     var interactor: HomeInteractor?
     var router: HomeRouter?
 
+    func present() {
+    }
+
     func presentNearby() {
         router?.navigateToNearby()
     }
 
     func presentLocalSearch(for query: String, at region: MKCoordinateRegion, currentLocation location: CLLocation) {
+        interactor?.handleCurrentCity(withLatitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = query
         request.region = region
@@ -52,8 +60,20 @@ class HomePresenterImpl: HomePresenter {
                 let viewModel = HomeEntity.Place.ViewModel(name: mapItem.name!, distance: distanceString, image: image)
                 return viewModel
             }
-            
+
             self.view?.display(viewModels)
         }
+    }
+
+    func update(_ response: CityDetailsResponse) {
+        debugLog(self, response)
+        let iconURL = URL(string: response.weatherStates?.first?.iconURL ?? "")
+        let temperature = Int(response.weatherStates?.first?.temperature ?? 0)
+        let viewModel = HomeEntity.City.ViewModel(title: response.title ?? "Unknown",
+                                                  icon: iconURL,
+                                                  weather: response.weatherStates?.first?.weatherName ?? "Unknown",
+                                                  temperature: "\(temperature)")
+
+        view?.display(viewModel)
     }
 }

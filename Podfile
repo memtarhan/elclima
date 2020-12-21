@@ -9,6 +9,8 @@ target 'ElClima' do
 
 pod 'Swinject'
 pod 'SwiftLint'
+pod 'Alamofire'
+pod 'Kingfisher'
 
   target 'ElClimaTests' do
     inherit! :search_paths

@@ -9,16 +9,22 @@
 import CoreLocation
 import MapKit
 import UIKit
+import Kingfisher
 
 protocol HomeViewController: class {
     var presenter: HomePresenter? { get set }
 
     func display(_ viewModels: [HomeEntity.Place.ViewModel])
+    func display(_ viewModel: HomeEntity.City.ViewModel)
 }
 
 class HomeViewControllerImpl: UIViewController {
     var presenter: HomePresenter?
 
+    @IBOutlet var cityTitleLabel: UILabel!
+    @IBOutlet var weatherIconImageView: UIImageView!
+    @IBOutlet var weatherLabel: UILabel!
+    @IBOutlet var temperatureLabel: UILabel!
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var indicatorView: UIActivityIndicatorView!
@@ -63,7 +69,7 @@ class HomeViewControllerImpl: UIViewController {
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         locationManager?.requestWhenInUseAuthorization()
     }
-    
+
     private func updateIndicator(_ animating: Bool) {
         indicatorView.isHidden = !animating
         if animating { indicatorView.startAnimating() }
@@ -79,6 +85,15 @@ extension HomeViewControllerImpl: HomeViewController {
         DispatchQueue.main.async {
             self.updateIndicator(false)
             self.tableView.reloadData()
+        }
+    }
+
+    func display(_ viewModel: HomeEntity.City.ViewModel) {
+        DispatchQueue.main.async { [self] in
+            cityTitleLabel.text = viewModel.title
+            weatherIconImageView.kf.setImage(with: viewModel.icon)
+            weatherLabel.text = viewModel.weather
+            temperatureLabel.text = viewModel.temperature
         }
     }
 }

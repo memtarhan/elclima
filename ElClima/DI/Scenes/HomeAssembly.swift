@@ -20,6 +20,7 @@ class HomeAssembly: Assembly {
             presenter.view = viewController
             presenter.router = router
             presenter.interactor = interactor
+            interactor.presenter = presenter
             viewController.presenter = presenter
             router.view = viewController
 
