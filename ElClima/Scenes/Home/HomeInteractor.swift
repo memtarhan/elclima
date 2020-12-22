@@ -18,16 +18,32 @@ class HomeInteractorImpl: HomeInteractor {
     var presenter: HomePresenter?
 
     private let service: HomeService
+    private var workflow: CurrentCityWorkflow
 
-    init(service: HomeService) {
+    init(service: HomeService, workflow: CurrentCityWorkflow) {
         self.service = service
+        self.workflow = workflow
     }
 
     func handleCurrentCity(withLatitude latitude: Double, longitude: Double) {
         service.retrieveCurrentCity(withLatitude: latitude, longitude: longitude) { result in
             switch result {
-            case let .success(response):
-                self.presenter?.update(response)
+            case let .success(cities):
+                self.workflow.cities = cities
+                guard let woeid = cities.first?.woeid else {
+                    // TODO: Handle error
+                    return
+                }
+
+                self.service.retrieveDetails(forWoeid: woeid) { detailsResult in
+                    switch detailsResult {
+                    case let .success(detailsData):
+                        self.presenter?.update(detailsData)
+                    case let .failure(detailsError):
+                        debugLog(self, detailsError)
+                    }
+                }
+
             case .failure:
                 break
             }

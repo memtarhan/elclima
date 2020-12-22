@@ -26,3 +26,10 @@ func push<T, E>(_ view: T, from source: E?) {
         source.navigationController?.pushViewController(destination, animated: true)
     }
 }
+
+func dismiss<T>(_ view: T) {
+    guard let view = view as? UIViewController else { return }
+    DispatchQueue.main.async {
+        view.dismiss(animated: true, completion: nil)
+    }
+}

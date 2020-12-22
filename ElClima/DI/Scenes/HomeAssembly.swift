@@ -32,7 +32,7 @@ class HomeAssembly: Assembly {
         }
 
         container.register(HomeInteractor.self) { r in
-            HomeInteractorImpl(service: r.resolve(HomeService.self)!)
+            HomeInteractorImpl(service: r.resolve(HomeService.self)!, workflow: r.resolve(CurrentCityWorkflow.self)!)
         }
 
         container.register(HomeRouter.self) { r in

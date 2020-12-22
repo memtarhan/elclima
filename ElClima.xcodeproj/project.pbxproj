@@ -12,6 +12,9 @@
 		DB2B6D17258EA47400FD45CB /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2B6D16258EA47400FD45CB /* DebugLog.swift */; };
 		DB2B6D22258EB0E900FD45CB /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2B6D20258EB0E900FD45CB /* PlaceTableViewCell.swift */; };
 		DB2B6D23258EB0E900FD45CB /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2B6D21258EB0E900FD45CB /* PlaceTableViewCell.xib */; };
+		DB3CB84C2592536D00DA2BFC /* CurrentCityWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CB84B2592536D00DA2BFC /* CurrentCityWorkflow.swift */; };
+		DB3CB852259254D600DA2BFC /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CB851259254D600DA2BFC /* CityModel.swift */; };
+		DB3CB85725925B7C00DA2BFC /* WorkflowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CB85625925B7C00DA2BFC /* WorkflowAssembly.swift */; };
 		DB68897F25895250009D4154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68897E25895250009D4154 /* AppDelegate.swift */; };
 		DB68898825895251009D4154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB68898725895251009D4154 /* Assets.xcassets */; };
 		DB68898B25895251009D4154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB68898925895251009D4154 /* LaunchScreen.storyboard */; };
@@ -82,6 +85,9 @@
 		DB2B6D16258EA47400FD45CB /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
 		DB2B6D20258EB0E900FD45CB /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		DB2B6D21258EB0E900FD45CB /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		DB3CB84B2592536D00DA2BFC /* CurrentCityWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCityWorkflow.swift; sourceTree = "<group>"; };
+		DB3CB851259254D600DA2BFC /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		DB3CB85625925B7C00DA2BFC /* WorkflowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowAssembly.swift; sourceTree = "<group>"; };
 		DB68897B25895250009D4154 /* ElClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB68897E25895250009D4154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB68898725895251009D4154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,6 +180,14 @@
 			path = Place;
 			sourceTree = "<group>";
 		};
+		DB3CB850259254CB00DA2BFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB3CB851259254D600DA2BFC /* CityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DB68897225895250009D4154 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +213,7 @@
 		DB68897D25895250009D4154 /* ElClima */ = {
 			isa = PBXGroup;
 			children = (
+				DB3CB850259254CB00DA2BFC /* Models */,
 				DB6889D72589543E009D4154 /* Scenes */,
 				DB6889C925895405009D4154 /* Common */,
 				DB6889BE258953C3009D4154 /* DI */,
@@ -251,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				DB6889C1258953DC009D4154 /* ViewControllerAssembly.swift */,
+				DB3CB85625925B7C00DA2BFC /* WorkflowAssembly.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -259,11 +275,12 @@
 			isa = PBXGroup;
 			children = (
 				DB6889F2258956CB009D4154 /* Colors.swift */,
+				DB3CB84B2592536D00DA2BFC /* CurrentCityWorkflow.swift */,
 				DBF1B49A25895DD500970062 /* CustomViews.swift */,
+				DB2B6D16258EA47400FD45CB /* DebugLog.swift */,
 				DBBEBBC6258A7A6F00BDA0B4 /* Router+.swift */,
 				DB6889ED258956AE009D4154 /* UIView+Gradient.swift */,
 				DB6889CA2589540D009D4154 /* ViewControllerFactory.swift */,
-				DB2B6D16258EA47400FD45CB /* DebugLog.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -616,6 +633,7 @@
 				DB6889E12589544C009D4154 /* HomeRouter.swift in Sources */,
 				DB6889C2258953DC009D4154 /* ViewControllerAssembly.swift in Sources */,
 				DBBEBBAF258A79D400BDA0B4 /* NearbyViewController.swift in Sources */,
+				DB3CB84C2592536D00DA2BFC /* CurrentCityWorkflow.swift in Sources */,
 				DB2B6D22258EB0E900FD45CB /* PlaceTableViewCell.swift in Sources */,
 				DB6889E32589544C009D4154 /* HomeInteractor.swift in Sources */,
 				DBBEBBD1258A7CED00BDA0B4 /* CityTableViewCell.swift in Sources */,
@@ -627,8 +645,10 @@
 				DB6889E02589544C009D4154 /* HomePresenter.swift in Sources */,
 				DBBEBBF5258A827A00BDA0B4 /* DetailsAssembly.swift in Sources */,
 				DB2B6D17258EA47400FD45CB /* DebugLog.swift in Sources */,
+				DB3CB852259254D600DA2BFC /* CityModel.swift in Sources */,
 				DB6889E22589544C009D4154 /* HomeViewController.swift in Sources */,
 				DB6889E42589544C009D4154 /* HomeEntity.swift in Sources */,
+				DB3CB85725925B7C00DA2BFC /* WorkflowAssembly.swift in Sources */,
 				DBBEBBE0258A80EE00BDA0B4 /* DetailsViewController.swift in Sources */,
 				DBBEBBB1258A79D400BDA0B4 /* NearbyEntity.swift in Sources */,
 				DBBEBBE1258A80EE00BDA0B4 /* DetailsInteractor.swift in Sources */,

@@ -9,4 +9,11 @@
 import UIKit
 
 struct NearbyEntity {
+    struct City {
+        struct ViewModel {
+            let name: String
+            let type: String?
+            let distance: String
+        }
+    }
 }

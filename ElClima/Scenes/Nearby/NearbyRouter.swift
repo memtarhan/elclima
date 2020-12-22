@@ -12,6 +12,7 @@ protocol NearbyRouter: class {
     var view: NearbyViewController? { get set }
     
     func navigateToDetails()
+    func dismiss()
 }
 
 class NearbyRouterImpl: NearbyRouter {
@@ -25,5 +26,9 @@ class NearbyRouterImpl: NearbyRouter {
     
     func navigateToDetails() {
         push(factory.details, from: view)
+    }
+    
+    func dismiss() {
+        ElClima.dismiss(view)
     }
 }

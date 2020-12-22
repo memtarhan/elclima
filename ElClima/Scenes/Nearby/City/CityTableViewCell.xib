@@ -18,37 +18,46 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3F-3W-fee" customClass="TabBarView" customModule="ElClima" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="11" width="335" height="96"/>
+                        <rect key="frame" x="0.0" y="23" width="335" height="72"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Istanbul" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-dE-cLC">
-                                <rect key="frame" x="32" y="36.5" width="102" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io4-JU-37D">
-                                <rect key="frame" x="142" y="21" width="51.5" height="54"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
-                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rainy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thL-Uv-dSe">
-                                <rect key="frame" x="201.5" y="40" width="32.5" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="R02-RI-m5Y">
+                                <rect key="frame" x="32" y="13.5" width="152.5" height="45.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Frq-cR-wBA">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="45.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Istanbul" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-dE-cLC">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io4-JU-37D">
+                                                <rect key="frame" x="17.5" y="25" width="34.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thL-Uv-dSe">
+                                        <rect key="frame" x="114.5" y="0.0" width="38" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="thL-Uv-dSe" firstAttribute="top" secondItem="R02-RI-m5Y" secondAttribute="top" id="8Ob-GH-4dB"/>
+                                    <constraint firstAttribute="bottom" secondItem="thL-Uv-dSe" secondAttribute="bottom" id="IQN-tr-0uK"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="thL-Uv-dSe" firstAttribute="centerY" secondItem="K3F-3W-fee" secondAttribute="centerY" id="Hlb-ae-dZO"/>
-                            <constraint firstItem="HcX-dE-cLC" firstAttribute="leading" secondItem="K3F-3W-fee" secondAttribute="leading" constant="32" id="LO7-g9-CPw"/>
-                            <constraint firstAttribute="height" constant="96" id="QgT-oc-W9v"/>
-                            <constraint firstItem="HcX-dE-cLC" firstAttribute="centerY" secondItem="K3F-3W-fee" secondAttribute="centerY" id="T2p-yr-WO6"/>
-                            <constraint firstItem="io4-JU-37D" firstAttribute="centerX" secondItem="K3F-3W-fee" secondAttribute="centerX" id="Un7-uc-X7N"/>
-                            <constraint firstItem="io4-JU-37D" firstAttribute="leading" secondItem="HcX-dE-cLC" secondAttribute="trailing" constant="8" id="a68-Nv-UNT"/>
-                            <constraint firstItem="io4-JU-37D" firstAttribute="centerY" secondItem="K3F-3W-fee" secondAttribute="centerY" id="dfG-Xi-QpT"/>
-                            <constraint firstItem="thL-Uv-dSe" firstAttribute="leading" secondItem="io4-JU-37D" secondAttribute="trailing" constant="8" id="jkb-VD-qbf"/>
+                            <constraint firstAttribute="height" constant="72" id="QgT-oc-W9v"/>
+                            <constraint firstItem="R02-RI-m5Y" firstAttribute="centerY" secondItem="K3F-3W-fee" secondAttribute="centerY" id="dx2-y7-NIb"/>
+                            <constraint firstItem="R02-RI-m5Y" firstAttribute="leading" secondItem="K3F-3W-fee" secondAttribute="leading" constant="32" id="iMj-Oy-dC1"/>
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llp-sX-oUV">
@@ -72,7 +81,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="distanceLabel" destination="thL-Uv-dSe" id="Tr7-us-WmQ"/>
                 <outlet property="nextButton" destination="Llp-sX-oUV" id="Oar-bl-gEu"/>
+                <outlet property="titleLabel" destination="HcX-dE-cLC" id="Yv3-OW-PbC"/>
+                <outlet property="typeLabel" destination="io4-JU-37D" id="igV-d5-Ffl"/>
             </connections>
             <point key="canvasLocation" x="-38.405797101449281" y="154.6875"/>
         </tableViewCell>

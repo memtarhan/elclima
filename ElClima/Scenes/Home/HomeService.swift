@@ -10,32 +10,23 @@ import Alamofire
 import UIKit
 
 protocol HomeService: class {
-    func retrieveCurrentCity(withLatitude: Double, longitude: Double, _ completionHandler: @escaping (Result<CityDetailsResponse, Error>) -> Void)
+    func retrieveCurrentCity(withLatitude: Double, longitude: Double, _ completionHandler: @escaping (Result<[CityModel], Error>) -> Void)
+    func retrieveDetails(forWoeid woeid: Int, _ completionHandler: @escaping (Result<CityDetailsResponse, Error>) -> Void)
 }
 
 class HomeServiceImpl: HomeService {
-    func retrieveCurrentCity(withLatitude latitude: Double, longitude: Double, _ completionHandler: @escaping (Result<CityDetailsResponse, Error>) -> Void) {
+    func retrieveCurrentCity(withLatitude latitude: Double, longitude: Double, _ completionHandler: @escaping (Result<[CityModel], Error>) -> Void) {
         let url = "https://www.metaweather.com/api/location/search/?lattlong=\(latitude),\(longitude)"
         AF.request(url)
             .responseJSON { response in
                 switch response.result {
                 case let .success(data):
-                    if let values = data as? [[String: Any]],
-                       let value = values.first {
-                        let currentCityResponse = CurrentCityResponse(value)
-                        guard let woeid = currentCityResponse.woeid else {
-                            // TODO: Handle error
-                            return
+                    if let values = data as? [[String: Any]] {
+                        let cityModels = values.map { (value) -> CityModel in
+                            CityModel(value)
                         }
-                        self.retrieveDetails(forWoeid: woeid) { detailsResult in
-                            switch detailsResult {
-                            case let .success(detailsData):
-                                completionHandler(.success(detailsData))
-                            case let .failure(detailsError):
-                                debugLog(self, detailsError)
-                            }
-                        }
-                        debugLog(self, currentCityResponse)
+
+                        completionHandler(.success(cityModels))
                     }
 
                 case let .failure(error):
@@ -44,7 +35,7 @@ class HomeServiceImpl: HomeService {
             }
     }
 
-    private func retrieveDetails(forWoeid woeid: Int, _ completionHandler: @escaping (Result<CityDetailsResponse, Error>) -> Void) {
+    func retrieveDetails(forWoeid woeid: Int, _ completionHandler: @escaping (Result<CityDetailsResponse, Error>) -> Void) {
         let url = "https://www.metaweather.com/api/location/\(woeid)/"
         AF.request(url)
             .responseJSON { response in
@@ -60,20 +51,6 @@ class HomeServiceImpl: HomeService {
                     debugLog(self, error)
                 }
             }
-    }
-}
-
-struct CurrentCityResponse {
-    let title: String?
-    let woeid: Int?
-    let type: String?
-    let distance: Int?
-
-    init(_ data: [String: Any]) {
-        title = data["title"] as? String
-        woeid = data["woeid"] as? Int
-        type = data["location_type"] as? String
-        distance = data["distance"] as? Int
     }
 }
 

@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         initWindow()
         initDI()
+        initSingletons()
         initUI()
         initNavigationBar()
 
@@ -44,13 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NearbyAssembly(),
         ])
         assembler?.apply(assembly: ViewControllerAssembly(assembler: assembler!))
+        assembler?.apply(assembly: WorkflowAssembly(assembler: assembler!))
+    }
+
+    func initSingletons() {
+        _ = assembler?.resolver.resolve(CurrentCityWorkflow.self)!
     }
 
     /// - Initializing UI w/ initial view controller
     func initUI() {
         rootViewController = assembler?.resolver.resolve(HomeViewController.self)! as? UIViewController
     }
-    
+
     /// - Initializing UINavigationBar
     private func initNavigationBar() {
         let appearance = UINavigationBar.appearance()
