@@ -7,9 +7,10 @@
 //
 
 import CoreLocation
+import Firebase
+import Kingfisher
 import MapKit
 import UIKit
-import Kingfisher
 
 protocol HomeViewController: class {
     var presenter: HomePresenter? { get set }
@@ -41,6 +42,14 @@ class HomeViewControllerImpl: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        Analytics.logEvent("viewed_screen", parameters: [
+            "name": nibName! as NSObject,
+        ])
     }
 
     @IBAction func didChangePlace(_ sender: Any) {

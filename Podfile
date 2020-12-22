@@ -11,6 +11,11 @@ pod 'Swinject'
 pod 'SwiftLint'
 pod 'Alamofire'
 pod 'Kingfisher'
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
+
+# Recommended: Add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
 
   target 'ElClimaTests' do
     inherit! :search_paths

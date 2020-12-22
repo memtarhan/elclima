@@ -6,6 +6,7 @@
 //  Copyright © 2020 memtarhan. All rights reserved.
 //
 
+import Firebase
 import UIKit
 
 protocol NearbyViewController: class {
@@ -29,6 +30,14 @@ class NearbyViewControllerImpl: UIViewController {
         setup()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        Analytics.logEvent("viewed_screen", parameters: [
+            "name": nibName! as NSObject,
+        ])
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -40,7 +49,11 @@ class NearbyViewControllerImpl: UIViewController {
     }
 
     @objc private func didTapNext(_ sender: UIButton) {
-        presenter?.presentDetails(viewModels[sender.tag])
+        let model = viewModels[sender.tag]
+        Analytics.logEvent("viewed_city", parameters: [
+            "name": model.name as NSObject,
+        ])
+        presenter?.presentDetails(model)
     }
 
     private func setup() {

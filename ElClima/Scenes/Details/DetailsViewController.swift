@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 protocol DetailsViewController: class {
     var presenter: DetailsPresenter? { get set }
@@ -30,6 +31,14 @@ class DetailsViewControllerImpl: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        Analytics.logEvent("viewed_screen", parameters: [
+            "name": nibName! as NSObject,
+        ])
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -73,7 +82,7 @@ extension DetailsViewControllerImpl: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? WeatherTableViewCell else { return UITableViewCell() }
         let day = days[indexPath.row]
-        cell.model = day 
+        cell.model = day
 
         return cell
     }

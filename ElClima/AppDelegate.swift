@@ -5,6 +5,7 @@
 //  Created by Mehmet Tarhan on 15.12.2020.
 //
 
+import Firebase
 import Swinject
 import UIKit
 
@@ -27,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initSingletons()
         initUI()
         initNavigationBar()
+
+        FirebaseApp.configure()
 
         return true
     }
