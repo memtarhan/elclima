@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func initSingletons() {
-        _ = assembler?.resolver.resolve(CurrentCityWorkflow.self)!
+        _ = assembler?.resolver.resolve(Workflow.self)!
     }
 
     /// - Initializing UI w/ initial view controller

@@ -14,6 +14,7 @@ struct NearbyEntity {
             let name: String
             let type: String?
             let distance: String
+            let woeid: Int?
         }
     }
 }

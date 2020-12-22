@@ -17,8 +17,8 @@ class WorkflowAssembly: Assembly {
     }
 
     func assemble(container: Container) {
-        container.register(CurrentCityWorkflow.self) { _ in
-            CurrentCityWorkflowImpl()
+        container.register(Workflow.self) { _ in
+            WorkflowImpl()
         }.inObjectScope(.container) // Singleton
     }
 }

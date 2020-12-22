@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewControllerImpl" customModule="ElClima" customModuleProvider="target">
             <connections>
+                <outlet property="nameLabel" destination="LpG-kj-6H9" id="Gmt-kg-4SE"/>
+                <outlet property="tableView" destination="Hx3-y9-Ahn" id="6NL-yg-5Io"/>
+                <outlet property="timezoneLabel" destination="zBo-24-WLe" id="fJv-eV-FuY"/>
+                <outlet property="typeLabel" destination="RL3-Ks-buv" id="C9X-sE-OaQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +21,49 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientBackgroundView" customModule="ElClima" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Istanbul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpG-kj-6H9" userLabel="City Name Label">
+                    <rect key="frame" x="143.5" y="64" width="127" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL3-Ks-buv">
+                    <rect key="frame" x="188.5" y="110.5" width="37" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Europe/Istanbul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBo-24-WLe">
+                    <rect key="frame" x="137" y="144.5" width="140" height="26"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hx3-y9-Ahn">
+                    <rect key="frame" x="20" y="190.5" width="374" height="671.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Mh5-bI-WPY"/>
+                        <outlet property="delegate" destination="-1" id="4dq-bu-QmB"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="139" y="152"/>
+            <constraints>
+                <constraint firstItem="zBo-24-WLe" firstAttribute="top" secondItem="RL3-Ks-buv" secondAttribute="bottom" constant="8" id="5KB-U8-K93"/>
+                <constraint firstItem="Hx3-y9-Ahn" firstAttribute="top" secondItem="zBo-24-WLe" secondAttribute="bottom" constant="20" id="EbB-yj-uLj"/>
+                <constraint firstItem="LpG-kj-6H9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LJE-jp-4SC"/>
+                <constraint firstItem="RL3-Ks-buv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pyn-sf-nw2"/>
+                <constraint firstItem="zBo-24-WLe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZcA-am-XbC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hx3-y9-Ahn" secondAttribute="bottom" id="d4w-m9-BlP"/>
+                <constraint firstItem="RL3-Ks-buv" firstAttribute="top" secondItem="LpG-kj-6H9" secondAttribute="bottom" constant="8" id="fAS-m9-rRU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hx3-y9-Ahn" secondAttribute="trailing" constant="20" id="jBr-Tu-WaO"/>
+                <constraint firstItem="LpG-kj-6H9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="peW-0l-tiK"/>
+                <constraint firstItem="Hx3-y9-Ahn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qDb-qg-R4G"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
         </view>
     </objects>
 </document>

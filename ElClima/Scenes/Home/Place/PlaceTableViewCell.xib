@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="348" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-7U-hQy" customClass="TabBarView" customModule="ElClima" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-7U-hQy" customClass="CustomView" customModule="ElClima" customModuleProvider="target">
                         <rect key="frame" x="12" y="11" width="324" height="96"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cinema" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVW-xq-lcD">

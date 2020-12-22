@@ -20,6 +20,7 @@ class DetailsAssembly: Assembly {
             presenter.view = viewController
             presenter.router = router
             presenter.interactor = interactor
+            interactor.presenter = presenter
             viewController.presenter = presenter
             router.view = viewController
 
@@ -31,7 +32,7 @@ class DetailsAssembly: Assembly {
         }
 
         container.register(DetailsInteractor.self) { r in
-            DetailsInteractorImpl(service: r.resolve(DetailsService.self)!)
+            DetailsInteractorImpl(service: r.resolve(DetailsService.self)!, workflow: r.resolve(Workflow.self)!)
         }
 
         container.register(DetailsRouter.self) { r in

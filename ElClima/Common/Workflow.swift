@@ -8,10 +8,12 @@
 
 import Foundation
 
-protocol CurrentCityWorkflow {
+protocol Workflow {
     var cities: [CityModel]? { get set }
+    var selectedCityWoeid: Int? { get set }
 }
 
-class CurrentCityWorkflowImpl: CurrentCityWorkflow {
+class WorkflowImpl: Workflow {
     var cities: [CityModel]?
+    var selectedCityWoeid: Int?
 }

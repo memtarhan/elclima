@@ -18,9 +18,9 @@ class HomeInteractorImpl: HomeInteractor {
     var presenter: HomePresenter?
 
     private let service: HomeService
-    private var workflow: CurrentCityWorkflow
+    private var workflow: Workflow
 
-    init(service: HomeService, workflow: CurrentCityWorkflow) {
+    init(service: HomeService, workflow: Workflow) {
         self.service = service
         self.workflow = workflow
     }

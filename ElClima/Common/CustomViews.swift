@@ -9,8 +9,21 @@
 import UIKit
 
 @IBDesignable
-class TabBarView: UIView {
+class CustomView: UIView {
     override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        clipsToBounds = true
         layer.cornerRadius = frame.height / 2
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        let blurEffect = UIBlurEffect(style: .systemChromeMaterialLight)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = bounds
+        blurView.autoresizingMask = .flexibleWidth
+        insertSubview(blurView, at: 0)
     }
 }

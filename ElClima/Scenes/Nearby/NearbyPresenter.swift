@@ -15,7 +15,7 @@ protocol NearbyPresenter: class {
     var router: NearbyRouter? { get set }
 
     func present()
-    func presentDetails()
+    func presentDetails(_ city: NearbyEntity.City.ViewModel)
 }
 
 class NearbyPresenterImpl: NearbyPresenter {
@@ -34,7 +34,8 @@ class NearbyPresenterImpl: NearbyPresenter {
 
                     return NearbyEntity.City.ViewModel(name: city.title ?? "Unknown city",
                                                        type: city.type,
-                                                       distance: distanceString)
+                                                       distance: distanceString,
+                                                       woeid: city.woeid)
                 }
                 view?.display(viewModels)
 
@@ -44,7 +45,8 @@ class NearbyPresenterImpl: NearbyPresenter {
         })
     }
 
-    func presentDetails() {
+    func presentDetails(_ city: NearbyEntity.City.ViewModel) {
+        interactor?.selectedCityWoeid = city.woeid
         router?.navigateToDetails()
     }
 }

@@ -9,14 +9,21 @@
 import UIKit
 
 protocol NearbyInteractor: class {
+    var selectedCityWoeid: Int? { get set }
+    
     func retrieveCities(_ completionHandler: @escaping (Result < [CityModel], Error>) -> Void)
 }
 
 class NearbyInteractorImpl: NearbyInteractor {
     private let service: NearbyService
-    private let workflow: CurrentCityWorkflow
+    private var workflow: Workflow
+    
+    var selectedCityWoeid: Int? {
+        get { return workflow.selectedCityWoeid }
+        set { workflow.selectedCityWoeid = newValue }
+    }
 
-    init(service: NearbyService, workflow: CurrentCityWorkflow) {
+    init(service: NearbyService, workflow: Workflow) {
         self.service = service
         self.workflow = workflow
     }

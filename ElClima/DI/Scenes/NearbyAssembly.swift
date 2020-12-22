@@ -31,7 +31,7 @@ class NearbyAssembly: Assembly {
         }
 
         container.register(NearbyInteractor.self) { r in
-            NearbyInteractorImpl(service: r.resolve(NearbyService.self)!, workflow: r.resolve(CurrentCityWorkflow.self)!)
+            NearbyInteractorImpl(service: r.resolve(NearbyService.self)!, workflow: r.resolve(Workflow.self)!)
         }
 
         container.register(NearbyRouter.self) { r in

@@ -10,7 +10,7 @@ import UIKit
 
 protocol NearbyViewController: class {
     var presenter: NearbyPresenter? { get set }
-    
+
     func display(_ viewModels: [NearbyEntity.City.ViewModel])
 }
 
@@ -23,7 +23,7 @@ class NearbyViewControllerImpl: UIViewController {
     private let cellNibName = "CityTableViewCell"
 
     private var viewModels = [NearbyEntity.City.ViewModel]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -40,16 +40,16 @@ class NearbyViewControllerImpl: UIViewController {
     }
 
     @objc private func didTapNext(_ sender: UIButton) {
-        presenter?.presentDetails()
+        presenter?.presentDetails(viewModels[sender.tag])
     }
 
     private func setup() {
         navigationItem.backButtonTitle = ""
-        
+
         let cellNib = UINib(nibName: cellNibName, bundle: Bundle.main)
         tableView.register(cellNib, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.rowHeight = 120
-        
+
         presenter?.present()
     }
 }
@@ -79,6 +79,7 @@ extension NearbyViewControllerImpl: UITableViewDelegate, UITableViewDataSource {
         cell.typeLabel.text = viewModel.type
         cell.distanceLabel.text = viewModel.distance
         cell.nextButton.addTarget(self, action: #selector(didTapNext(_:)), for: .touchUpInside)
+        cell.nextButton.tag = indexPath.row
         return cell
     }
 }

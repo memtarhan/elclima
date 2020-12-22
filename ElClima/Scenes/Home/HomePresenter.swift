@@ -18,7 +18,7 @@ protocol HomePresenter: class {
     func presentNearby()
     func presentLocalSearch(for query: String, at region: MKCoordinateRegion, currentLocation location: CLLocation)
 
-    func update(_ response: CityDetailsResponse)
+    func update(_ response: CityDetails)
 }
 
 class HomePresenterImpl: HomePresenter {
@@ -65,13 +65,13 @@ class HomePresenterImpl: HomePresenter {
         }
     }
 
-    func update(_ response: CityDetailsResponse) {
+    func update(_ response: CityDetails) {
         debugLog(self, response)
         let iconURL = URL(string: response.weatherStates?.first?.iconURL ?? "")
         let temperature = Int(response.weatherStates?.first?.temperature ?? 0)
         let viewModel = HomeEntity.City.ViewModel(title: response.title ?? "Unknown",
                                                   icon: iconURL,
-                                                  weather: response.weatherStates?.first?.weatherName ?? "Unknown",
+                                                  weather: response.weatherStates?.first?.name ?? "Unknown",
                                                   temperature: "\(temperature)")
 
         view?.display(viewModel)
