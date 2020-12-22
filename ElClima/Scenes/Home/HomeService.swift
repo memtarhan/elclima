@@ -10,7 +10,23 @@ import Alamofire
 import UIKit
 
 protocol HomeService: class {
-    func retrieveCurrentCity(withLatitude: Double, longitude: Double, _ completionHandler: @escaping (Result<[CityModel], Error>) -> Void)
+    /**
+     Retrieves current city
+
+     - Parameter latitude: The current location's latitude
+     - Parameter latitude: The current location's longitude
+
+     - Returns: A city model `recipient`.
+     */
+    func retrieveCurrentCity(withLatitude latitude: Double, longitude: Double, _ completionHandler: @escaping (Result<[CityModel], Error>) -> Void)
+    
+    /**
+     Retrieves details of the current city
+
+     - Parameter woeid: Where on earth identifier
+
+     - Returns: A city details model `recipient`.
+     */
     func retrieveDetails(forWoeid woeid: Int, _ completionHandler: @escaping (Result<CityDetails, Error>) -> Void)
 }
 

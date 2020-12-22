@@ -10,6 +10,13 @@ import UIKit
 import Alamofire
 
 protocol DetailsService: class {
+    /**
+     Retrieves details of the current city
+
+     - Parameter woeid: Where on earth identifier
+
+     - Returns: A city details model `recipient`.
+     */
     func retrieve(forWoeid woeid: Int, _ completionHandler: @escaping (Result<CityDetails, Error>) -> Void)
 }
 
